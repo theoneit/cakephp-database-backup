@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DatabaseBackup\Utility\BackupManager | cakephp-database-backup</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.html">
+						DatabaseBackup<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Driver.html">
+						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.Utility.html">
+						Utility					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DatabaseBackup.Utility.BackupExport.html">BackupExport</a></li>
+				<li><a href="class-DatabaseBackup.Utility.BackupImport.html">BackupImport</a></li>
+				<li class="active"><a href="class-DatabaseBackup.Utility.BackupManager.html">BackupManager</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DatabaseBackup.Utility.html" title="Summary of DatabaseBackup\Utility"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class BackupManager</h1>
+
+
+	<div class="description">
+	<p>Utility to manage database backups</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>DatabaseBackup\Utility\BackupManager</span></b>			
+			
+			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Utility.html">Utility</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupManager.html#24-143" title="Go to source code">Utility/BackupManager.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#31-44" title="Go to source code">delete</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Deletes a backup file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes a backup file</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><p>Filename of the backup that you want to delete.
+ The path can be relative to the backup directory</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#delete<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Utility\BackupManager::deleteAll()<br>
+						DatabaseBackup\Utility\BackupManager::rotate()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteAll" id="_deleteAll">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteAll">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#46-59" title="Go to source code">deleteAll</a>( )</code>
+
+		<div class="description short">
+			<p>Deletes all backup files</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes all backup files</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>List of deleted backup files
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.0.1<br>
+				</div>
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#deleteAll<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Utility.BackupManager.html#_delete">DatabaseBackup\Utility\BackupManager::delete()</a></code><br>
+						<code><a href="class-DatabaseBackup.Utility.BackupManager.html#_index">DatabaseBackup\Utility\BackupManager::index()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="index" id="_index">
+
+		<td class="attributes"><code>
+			 public 
+
+			Cake\Collection\Collection
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_index">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#61-82" title="Go to source code">index</a>( )</code>
+
+		<div class="description short">
+			<p>Returns a list of database backups</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns a list of database backups</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					Cake\Collection\Collection<br><p>Collection of backups . Each backup
+ is an entity</p>
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#index<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Utility\BackupManager::deleteAll()<br>
+						DatabaseBackup\Utility\BackupManager::rotate()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rotate" id="_rotate">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rotate">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#84-107" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
+
+		<div class="description short">
+			<p>Rotates backups.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Rotates backups.</p>
+
+<p>You must indicate the number of backups you want to keep. So, it will delete all backups that are older.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$rotate</var></dt>
+					<dd>Number of backups that you want to keep</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Array of deleted files
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#rotate<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Utility.BackupManager.html#_delete">DatabaseBackup\Utility\BackupManager::delete()</a></code><br>
+						<code><a href="class-DatabaseBackup.Utility.BackupManager.html#_index">DatabaseBackup\Utility\BackupManager::index()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmailInstance" id="_getEmailInstance">
+
+		<td class="attributes"><code>
+			 protected 
+
+			Cake\Mailer\Email
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmailInstance">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#109-128" title="Go to source code">getEmailInstance</a>( <span>string <var>$backup</var></span>, <span>string <var>$recipient</var></span> )</code>
+
+		<div class="description short">
+			<p>Internal method to get an email instance with all options to send a
+ backup file via email</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Internal method to get an email instance with all options to send a backup file via email</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$backup</var></dt>
+					<dd>Backup you want to send</dd>
+					<dt><var>$recipient</var></dt>
+					<dd>Recipient's email address</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Cake\Mailer\Email
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.0<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Utility\BackupManager::send()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send" id="_send">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send">#</a>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupManager.html#130-142" title="Go to source code">send</a>( <span>string <var>$filename</var></span>, <span>string <var>$recipient</var></span> )</code>
+
+		<div class="description short">
+			<p>Sends a backup file via email</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends a backup file via email</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><p>Filename of the backup that you want to send via
+ email. The path can be relative to the backup directory</p></dd>
+					<dt><var>$recipient</var></dt>
+					<dd>Recipient's email address</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						1.1.0<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Utility.BackupManager.html#_getEmailInstance">DatabaseBackup\Utility\BackupManager::getEmailInstance()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-DatabaseBackup.BackupTrait.html#methods">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#_getAbsolutePath">getAbsolutePath()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getBinary">getBinary()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getCompression">getCompression()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getConnection">getConnection()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getDriver">getDriver()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getExtension">getExtension()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getTarget">getTarget()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">getValidCompressions()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidExtensions">getValidExtensions()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary used">
+	<caption>Properties used from <a href="class-DatabaseBackup.BackupTrait.html#properties">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#$validExtensions"><var>$validExtensions</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		cakephp-database-backup API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

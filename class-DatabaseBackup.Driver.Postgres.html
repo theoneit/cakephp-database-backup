@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DatabaseBackup\Driver\Postgres | cakephp-database-backup</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.html">
+						DatabaseBackup<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.Driver.html">
+						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Utility.html">
+						Utility					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DatabaseBackup.Driver.Driver.html">Driver</a></li>
+				<li><a href="class-DatabaseBackup.Driver.Mysql.html">Mysql</a></li>
+				<li class="active"><a href="class-DatabaseBackup.Driver.Postgres.html">Postgres</a></li>
+				<li><a href="class-DatabaseBackup.Driver.Sqlite.html">Sqlite</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DatabaseBackup.Driver.html" title="Summary of DatabaseBackup\Driver"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Postgres</h1>
+
+
+	<div class="description">
+	<p>Postgres driver to export/import database backups</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-DatabaseBackup.Driver.Driver.html"><span>DatabaseBackup\Driver\Driver</span></a>
+			
+			 implements 
+<span>Cake\Event\EventListenerInterface</span>
+			
+			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>, 
+			
+					Cake\Event\EventDispatcherTrait (not available)
+
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>DatabaseBackup\Driver\Postgres</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Driver.html">Driver</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Postgres.html#18-65" title="Go to source code">Driver/Postgres.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getDbnameAsString" id="_getDbnameAsString">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDbnameAsString">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#23-44" title="Go to source code">getDbnameAsString</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the value for the <code>--dbname</code> option for export and import
+ executables as string. It contains the connection string with username,
+ password and hostname.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the value for the <code>--dbname</code> option for export and import executables as string. It contains the connection string with username, password and hostname.</p>
+
+<p>It returns something like:</p>
+
+<pre>postgresql:<span class="php-comment">//postgres@localhost/travis_ci_test</span></pre>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Driver.html#_getConfig">DatabaseBackup\Driver\Driver::getConfig()</a></code><br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Postgres::_exportExecutable()<br>
+						DatabaseBackup\Driver\Postgres::_importExecutable()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_exportExecutable" id="__exportExecutable">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__exportExecutable">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#46-54" title="Go to source code">_exportExecutable</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to export the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to export the database</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Postgres.html#_getDbnameAsString">DatabaseBackup\Driver\Postgres::getDbnameAsString()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_importExecutable" id="__importExecutable">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__importExecutable">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#56-64" title="Go to source code">_importExecutable</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to import the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to import the database</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Postgres.html#_getDbnameAsString">DatabaseBackup\Driver\Postgres::getDbnameAsString()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-DatabaseBackup.Driver.Driver.html#methods">DatabaseBackup\Driver\Driver</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.Driver.Driver.html#___construct">__construct()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#__exportExecutableWithCompression">_exportExecutableWithCompression()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#__importExecutableWithCompression">_importExecutableWithCompression()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_afterExport">afterExport()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_afterImport">afterImport()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_beforeExport">beforeExport()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_beforeImport">beforeImport()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_export">export()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_getConfig">getConfig()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_implementedEvents">implementedEvents()</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html#_import">import()</a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-DatabaseBackup.BackupTrait.html#methods">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#_getAbsolutePath">getAbsolutePath()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getBinary">getBinary()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getCompression">getCompression()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getConnection">getConnection()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getDriver">getDriver()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getExtension">getExtension()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getTarget">getTarget()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">getValidCompressions()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidExtensions">getValidExtensions()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-DatabaseBackup.Driver.Driver.html#properties">DatabaseBackup\Driver\Driver</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.Driver.Driver.html#$connection"><var>$connection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+	<table class="summary used">
+	<caption>Properties used from <a href="class-DatabaseBackup.BackupTrait.html#properties">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#$validExtensions"><var>$validExtensions</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		cakephp-database-backup API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

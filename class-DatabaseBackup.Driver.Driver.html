@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DatabaseBackup\Driver\Driver | cakephp-database-backup</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.html">
+						DatabaseBackup<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.Driver.html">
+						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Utility.html">
+						Utility					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-DatabaseBackup.Driver.Driver.html">Driver</a></li>
+				<li><a href="class-DatabaseBackup.Driver.Mysql.html">Mysql</a></li>
+				<li><a href="class-DatabaseBackup.Driver.Postgres.html">Postgres</a></li>
+				<li><a href="class-DatabaseBackup.Driver.Sqlite.html">Sqlite</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DatabaseBackup.Driver.html" title="Summary of DatabaseBackup\Driver"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Driver</h1>
+
+
+	<div class="description">
+	<p>Represents a driver containing all methods to export/import database backups according to the database engine</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>DatabaseBackup\Driver\Driver</span></b>			
+			 implements 
+<span>Cake\Event\EventListenerInterface</span>
+			
+			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>, 
+			
+					Cake\Event\EventDispatcherTrait (not available)
+
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-DatabaseBackup.Driver.Mysql.html">DatabaseBackup\Driver\Mysql</a>, 
+			<a href="class-DatabaseBackup.Driver.Postgres.html">DatabaseBackup\Driver\Postgres</a>, 
+			<a href="class-DatabaseBackup.Driver.Sqlite.html">DatabaseBackup\Driver\Sqlite</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Driver.html">Driver</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Driver.html#21-233" title="Go to source code">Driver/Driver.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#35-46" title="Go to source code">__construct</a>( <span>Cake\Datasource\ConnectionInterface <var>$connection</var></span> )</code>
+
+		<div class="description short">
+			<p>Construct</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Construct</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd>A connection object</dd>
+				</dl></div>
+
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="implementedEvents" id="_implementedEvents">
+
+		<td class="attributes"><code>
+			final public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_implementedEvents">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#48-65" title="Go to source code">implementedEvents</a>( )</code>
+
+		<div class="description short">
+			<p>List of events this object is implementing. When the class is registered
+ in an event manager, each individual method will be associated with the
+ respective event</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>List of events this object is implementing. When the class is registered in an event manager, each individual method will be associated with the respective event</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br><p>Associative array or event key names pointing to the
+ function that should be called in the object when the respective event
+ is fired</p>
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1.1<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_exportExecutable" id="__exportExecutable">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__exportExecutable">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#67-71" title="Go to source code">_exportExecutable</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to export the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to export the database</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_importExecutable" id="__importExecutable">
+
+		<td class="attributes"><code>
+			abstract protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__importExecutable">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#73-77" title="Go to source code">_importExecutable</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to import the database</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to import the database</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Driver::_importExecutableWithCompression()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="afterExport" id="_afterExport">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_afterExport">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#79-86" title="Go to source code">afterExport</a>( )</code>
+
+		<div class="description short">
+			<p>Called after export</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Called after export</p>
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="afterImport" id="_afterImport">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_afterImport">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#88-95" title="Go to source code">afterImport</a>( )</code>
+
+		<div class="description short">
+			<p>Called after import</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Called after import</p>
+
+
+
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beforeExport" id="_beforeExport">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beforeExport">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#97-105" title="Go to source code">beforeExport</a>( )</code>
+
+		<div class="description short">
+			<p>Called before export</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Called before export</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <code>false</code> to stop the export
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beforeImport" id="_beforeImport">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beforeImport">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#107-115" title="Go to source code">beforeImport</a>( )</code>
+
+		<div class="description short">
+			<p>Called before import</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Called before import</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <code>false</code> to stop the import
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.1.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_exportExecutableWithCompression" id="__exportExecutableWithCompression">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__exportExecutableWithCompression">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#117-138" title="Go to source code">_exportExecutableWithCompression</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to export the database, with compression</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to export the database, with compression</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename where you want to export the database</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Driver.html#__exportExecutable">DatabaseBackup\Driver\Driver::_exportExecutable()</a></code><br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Driver::export()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_importExecutableWithCompression" id="__importExecutableWithCompression">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__importExecutableWithCompression">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#140-163" title="Go to source code">_importExecutableWithCompression</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets the executable command to import the database, with compression</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the executable command to import the database, with compression</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename from which you want to import the database</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Driver.html#__importExecutable">DatabaseBackup\Driver\Driver::_importExecutable()</a></code><br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Driver::import()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="export" id="_export">
+
+		<td class="attributes"><code>
+			final public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_export">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#165-190" title="Go to source code">export</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Exports the database.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Exports the database.</p>
+
+<p>When exporting, this method will trigger these events:</p>
+
+<ul>
+<li>Backup.beforeExport: will be triggered before export</li>
+<li>Backup.afterExport: will be triggered after export</li>
+</ul>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename where you want to export the database</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Driver.html#__exportExecutableWithCompression">DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConfig" id="_getConfig">
+
+		<td class="attributes"><code>
+			final public 
+
+			array|string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConfig">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#192-205" title="Go to source code">getConfig</a>( <span>string <var>$key</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets a config value or the whole configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets a config value or the whole configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd>Config key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array|string|null<br><p>Config value, <code>null</code> if the key doesn't exist
+ or all config values if no key was specified</p>
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.3.0<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Driver\Mysql::_exportExecutable()<br>
+						DatabaseBackup\Driver\Mysql::_importExecutable()<br>
+						DatabaseBackup\Driver\Mysql::writeAuthFile()<br>
+						DatabaseBackup\Driver\Postgres::getDbnameAsString()<br>
+						DatabaseBackup\Driver\Sqlite::_exportExecutable()<br>
+						DatabaseBackup\Driver\Sqlite::_importExecutable()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="import" id="_import">
+
+		<td class="attributes"><code>
+			final public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_import">#</a>
+		<code><a href="source-class-DatabaseBackup.Driver.Driver.html#207-232" title="Go to source code">import</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Imports the database.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Imports the database.</p>
+
+<p>When importing, this method will trigger these events:</p>
+
+<ul>
+<li>Backup.beforeImport: will be triggered before import</li>
+<li>Backup.afterImport: will be triggered after import</li>
+</ul>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename from which you want to import the database</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.Driver.Driver.html#__importExecutableWithCompression">DatabaseBackup\Driver\Driver::_importExecutableWithCompression()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-DatabaseBackup.BackupTrait.html#methods">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#_getAbsolutePath">getAbsolutePath()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getBinary">getBinary()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getCompression">getCompression()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getConnection">getConnection()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getDriver">getDriver()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getExtension">getExtension()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getTarget">getTarget()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">getValidCompressions()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getValidExtensions">getValidExtensions()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="connection" id="$connection">
+		<td class="attributes"><code>
+			protected  
+			Cake\Datasource\ConnectionInterface
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseBackup.Driver.Driver.html#29-33" title="Go to source code"><var>$connection</var></a>
+
+			<div class="description short">
+				<p>A connection object</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>A connection object</p>
+
+					<h4>Used by</h4>
+					<div class="list">
+							DatabaseBackup\Driver\Driver::__construct()<br>
+							DatabaseBackup\Driver\Driver::getConfig()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$connection" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+	<table class="summary used">
+	<caption>Properties used from <a href="class-DatabaseBackup.BackupTrait.html#properties">DatabaseBackup\BackupTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.BackupTrait.html#$validExtensions"><var>$validExtensions</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		cakephp-database-backup API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

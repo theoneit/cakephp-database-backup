@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Trait DatabaseBackup\BackupTrait | cakephp-database-backup</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.html">
+						DatabaseBackup<span></span>
+					</a>
+
+						<ul>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Command.html">
+						Command					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Driver.html">
+						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.TestSuite.html">
+						TestSuite					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Utility.html">
+						Utility					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-DatabaseBackup.Plugin.html">Plugin</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li class="active"><a href="class-DatabaseBackup.BackupTrait.html">BackupTrait</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DatabaseBackup.html" title="Summary of DatabaseBackup"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Trait BackupTrait</h1>
+
+
+	<div class="description">
+	<p>A trait that provides some methods used by all other classes</p>
+	</div>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct Known Users</h4>
+			<a href="class-DatabaseBackup.Console.Command.html">DatabaseBackup\Console\Command</a>, 
+			<a href="class-DatabaseBackup.Driver.Driver.html">DatabaseBackup\Driver\Driver</a>, 
+			<a href="class-DatabaseBackup.TestSuite.TestCase.html">DatabaseBackup\TestSuite\TestCase</a>, 
+			<a href="class-DatabaseBackup.Utility.BackupExport.html">DatabaseBackup\Utility\BackupExport</a>, 
+			<a href="class-DatabaseBackup.Utility.BackupImport.html">DatabaseBackup\Utility\BackupImport</a>, 
+			<a href="class-DatabaseBackup.Utility.BackupManager.html">DatabaseBackup\Utility\BackupManager</a>
+	</div>
+
+	<div>
+		<h4>Indirect Known Users</h4>
+			<a href="class-DatabaseBackup.Command.DeleteAllCommand.html">DatabaseBackup\Command\DeleteAllCommand</a>, 
+			<a href="class-DatabaseBackup.Command.ExportCommand.html">DatabaseBackup\Command\ExportCommand</a>, 
+			<a href="class-DatabaseBackup.Command.ImportCommand.html">DatabaseBackup\Command\ImportCommand</a>, 
+			<a href="class-DatabaseBackup.Command.IndexCommand.html">DatabaseBackup\Command\IndexCommand</a>, 
+			<a href="class-DatabaseBackup.Command.RotateCommand.html">DatabaseBackup\Command\RotateCommand</a>, 
+			<a href="class-DatabaseBackup.Command.SendCommand.html">DatabaseBackup\Command\SendCommand</a>, 
+			<a href="class-DatabaseBackup.Driver.Mysql.html">DatabaseBackup\Driver\Mysql</a>, 
+			<a href="class-DatabaseBackup.Driver.Postgres.html">DatabaseBackup\Driver\Postgres</a>, 
+			<a href="class-DatabaseBackup.Driver.Sqlite.html">DatabaseBackup\Driver\Sqlite</a>, 
+			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
+	</div>
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-DatabaseBackup.BackupTrait.html#22-144" title="Go to source code">BackupTrait.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getAbsolutePath" id="_getAbsolutePath">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAbsolutePath">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#34-43" title="Go to source code">getAbsolutePath</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns an absolute path</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns an absolute path</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>Relative or absolute path</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.BackupTrait.html#_getTarget">DatabaseBackup\BackupTrait::getTarget()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBinary" id="_getBinary">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBinary">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#45-54" title="Go to source code">getBinary</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Gets a binary path</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets a binary path</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>Binary name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0.0<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCompression" id="_getCompression">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCompression">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#56-69" title="Go to source code">getCompression</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the compression type from a filename</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the compression type from a filename</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|boolean<br>Compression type as string or <code>false</code>
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.BackupTrait.html#_getExtension">DatabaseBackup\BackupTrait::getExtension()</a></code><br>
+						<code><a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">DatabaseBackup\BackupTrait::getValidCompressions()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConnection" id="_getConnection">
+
+		<td class="attributes"><code>
+			 public 
+
+			Cake\Datasource\ConnectionInterface
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConnection">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#71-79" title="Go to source code">getConnection</a>( <span>string|null <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets the connection array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the connection array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>Connection name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Cake\Datasource\ConnectionInterface<br>A connection object
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\BackupTrait::getDriver()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDriver" id="_getDriver">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDriver">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#81-98" title="Go to source code">getDriver</a>( <span>Cake\Datasource\ConnectionInterface <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets the driver containing all methods to export/import database backups
+ according to the database engine</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the driver containing all methods to export/import database backups according to the database engine</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd>A connection object</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object<br>A driver instance
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					InvalidArgumentException
+				</div>
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0.0<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.BackupTrait.html#_getConnection">DatabaseBackup\BackupTrait::getConnection()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getExtension" id="_getExtension">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getExtension">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#100-112" title="Go to source code">getExtension</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the extension from a filename</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the extension from a filename</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>Filename</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null<br><p>Extension or <code>null</code> if the extension is not found or
+ if is an invalid extension</p>
+				</div>
+
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-DatabaseBackup.BackupTrait.html#_getValidExtensions">DatabaseBackup\BackupTrait::getValidExtensions()</a></code><br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\BackupTrait::getCompression()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTarget" id="_getTarget">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTarget">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#114-121" title="Go to source code">getTarget</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the target path</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the target path</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\BackupTrait::getAbsolutePath()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValidCompressions" id="_getValidCompressions">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValidCompressions">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#123-132" title="Go to source code">getValidCompressions</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all valid compressions</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all valid compressions</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.4.0<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						$$validExtensions<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\Utility\BackupExport::compression()<br>
+						DatabaseBackup\BackupTrait::getCompression()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValidExtensions" id="_getValidExtensions">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValidExtensions">#</a>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#134-143" title="Go to source code">getValidExtensions</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all valid extensions</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all valid extensions</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.4.0<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<br>
+				</div>
+				<h4>Used by</h4>
+				<div class="list">
+						DatabaseBackup\BackupTrait::getExtension()<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="validExtensions" id="$validExtensions">
+		<td class="attributes"><code>
+			private static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseBackup.BackupTrait.html#27-32" title="Go to source code"><var>$validExtensions</var></a>
+
+			<div class="description short">
+				<p>Valid extensions (as keys) and compressions (as values)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Valid extensions (as keys) and compressions (as values)</p>
+
+					<h4>Since</h4>
+					<div class="list">
+							2.4.0<br>
+					</div>
+					<h4>Used by</h4>
+					<div class="list">
+							DatabaseBackup\BackupTrait::getValidExtensions()<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$validExtensions" class="anchor">#</a>
+				<code>[<span class="php-quote">'sql.bz2'</span> =&gt; <span class="php-quote">'bzip2'</span>, <span class="php-quote">'sql.gz'</span> =&gt; <span class="php-quote">'gzip'</span>, <span class="php-quote">'sql'</span> =&gt; <span class="php-keyword1">false</span>]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		cakephp-database-backup API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
