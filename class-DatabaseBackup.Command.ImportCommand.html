@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class DatabaseBackup\TestSuite\TestCase | cakephp-database-backup</title>
+	<title>Class DatabaseBackup\Command\ImportCommand | cakephp-database-backup</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -24,7 +24,7 @@
 					</a>
 
 						<ul>
-				<li class="main">
+				<li class="active main">
 					<a href="namespace-DatabaseBackup.Command.html">
 						Command					</a>
 
@@ -39,7 +39,7 @@
 						Driver					</a>
 
 						</li>
-				<li class="active main">
+				<li class="main">
 					<a href="namespace-DatabaseBackup.TestSuite.html">
 						TestSuite					</a>
 
@@ -59,8 +59,12 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DriverTestCase</a></li>
-				<li class="active"><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
+				<li><a href="class-DatabaseBackup.Command.DeleteAllCommand.html">DeleteAllCommand</a></li>
+				<li><a href="class-DatabaseBackup.Command.ExportCommand.html">ExportCommand</a></li>
+				<li class="active"><a href="class-DatabaseBackup.Command.ImportCommand.html">ImportCommand</a></li>
+				<li><a href="class-DatabaseBackup.Command.IndexCommand.html">IndexCommand</a></li>
+				<li><a href="class-DatabaseBackup.Command.RotateCommand.html">RotateCommand</a></li>
+				<li><a href="class-DatabaseBackup.Command.SendCommand.html">SendCommand</a></li>
 			</ul>
 
 
@@ -87,7 +91,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-DatabaseBackup.TestSuite.html" title="Summary of DatabaseBackup\TestSuite"><span>Namespace</span></a>
+				<a href="namespace-DatabaseBackup.Command.html" title="Summary of DatabaseBackup\Command"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -112,34 +116,37 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class TestCase</h1>
+	<h1>Class ImportCommand</h1>
 
 
 	<div class="description">
-	<p>TestCase class</p>
+	<p>Imports a database backup</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-MeTools\TestSuite\TestCase
+MeTools\Console\Command
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-<b><span>DatabaseBackup\TestSuite\TestCase</span></b>			
+			<a href="class-DatabaseBackup.Console.Command.html"><span>DatabaseBackup\Console\Command</span></a>
+			
 			
 			 uses 
 					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
 			
 		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>DatabaseBackup\Command\ImportCommand</span></b>			
+			
+			
+		</dd>
 	</dl>
 
 
-	<div>
-		<h4>Direct known subclasses</h4>
-			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
-	</div>
 
 
 
@@ -147,12 +154,12 @@ MeTools\TestSuite\TestCase
 
 
 	<div class="info">
-		<b>Abstract</b><br>
 		
-		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.TestSuite.html">TestSuite</a><br>
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Command.html">Command</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.TestCase.html#21-86" title="Go to source code">TestSuite/TestCase.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Command.ImportCommand.html#23-65" title="Go to source code">Command/ImportCommand.php</a>
 		<br>
 	</div>
 
@@ -160,148 +167,93 @@ MeTools\TestSuite\TestCase
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="setUp" id="_setUp">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#33-44" title="Go to source code">setUp</a>( )</code>
-
-		<div class="description short">
-			<p>Called before every test method</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Called before every test method</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tearDown" id="_tearDown">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#46-56" title="Go to source code">tearDown</a>( )</code>
-
-		<div class="description short">
-			<p>Called after every test method</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Called after every test method</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="createBackup" id="_createBackup">
+	<tr data-order="buildOptionParser" id="_buildOptionParser">
 
 		<td class="attributes"><code>
 			 protected 
 
-			string
+			Cake\Console\ConsoleOptionParser
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createBackup">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#58-66" title="Go to source code">createBackup</a>( <span>string <var>$filename</var> = <span class="php-quote">'backup.sql'</span></span> )</code>
+		<a class="anchor" href="#_buildOptionParser">#</a>
+		<code><a href="source-class-DatabaseBackup.Command.ImportCommand.html#28-40" title="Go to source code">buildOptionParser</a>( <span>Cake\Console\ConsoleOptionParser <var>$parser</var></span> )</code>
 
 		<div class="description short">
-			<p>Internal method to create a backup file</p>
+			<p>Hook method for defining this command's option parser</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Internal method to create a backup file</p>
+			<p>Hook method for defining this command's option parser</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$filename</var></dt>
-					<dd>Filename</dd>
+					<dt><var>$parser</var></dt>
+					<dd>The parser to be defined</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					string
+					Cake\Console\ConsoleOptionParser
 				</div>
 
 
-				<h4>Used by</h4>
-				<div class="list">
-						DatabaseBackup\TestSuite\TestCase::createSomeBackups()<br>
-				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="createSomeBackups" id="_createSomeBackups">
+	<tr data-order="execute" id="_execute">
 
 		<td class="attributes"><code>
-			 protected 
+			 public 
 
-			array
+			null|integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_createSomeBackups">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#68-85" title="Go to source code">createSomeBackups</a>( <span>boolean <var>$sleep</var> = <span class="php-keyword1">false</span></span> )</code>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-DatabaseBackup.Command.ImportCommand.html#42-64" title="Go to source code">execute</a>( <span>Cake\Console\Arguments <var>$args</var></span>, <span>Cake\Console\ConsoleIo <var>$io</var></span> )</code>
 
 		<div class="description short">
-			<p>Internal method to creates some backup files</p>
+			<p>Imports a database backup</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Internal method to creates some backup files</p>
+			<p>Imports a database backup</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$sleep</var></dt>
-					<dd>If <code>true</code>, waits a second for each backup</dd>
+					<dt><var>$args</var></dt>
+					<dd>The command arguments</dd>
+					<dt><var>$io</var></dt>
+					<dd>The console io</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					array
+					null|integer<br>The exit code or null for success
 				</div>
 
 
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupShell#import<br>
+				</div>
 				<h4>Uses</h4>
 				<div class="list">
-						<code><a href="class-DatabaseBackup.TestSuite.TestCase.html#_createBackup">DatabaseBackup\TestSuite\TestCase::createBackup()</a></code><br>
+						DatabaseBackup\Utility\BackupImport::filename()<br>
+						DatabaseBackup\Utility\BackupImport::import()<br>
 				</div>
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-DatabaseBackup.Console.Command.html#_execute">DatabaseBackup\Console\Command::execute()</a></code></div>
 
 		</div>
 		</div></td>
@@ -335,34 +287,6 @@ MeTools\TestSuite\TestCase
 
 
 
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="BackupExport" id="$BackupExport">
-		<td class="attributes"><code>
-			protected  
-			<code><a href="class-DatabaseBackup.Utility.BackupExport.html">DatabaseBackup\Utility\BackupExport</a></code>
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.TestCase.html#28-31" title="Go to source code"><var>$BackupExport</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$BackupExport" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
-	</table>
 
 
 	<table class="summary used">

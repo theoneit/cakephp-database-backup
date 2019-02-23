@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class DatabaseBackup\TestSuite\TestCase | cakephp-database-backup</title>
+	<title>Class DatabaseBackup\Console\Command | cakephp-database-backup</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -29,7 +29,7 @@
 						Command					</a>
 
 						</li>
-				<li class="main">
+				<li class="active main">
 					<a href="namespace-DatabaseBackup.Console.html">
 						Console					</a>
 
@@ -39,7 +39,7 @@
 						Driver					</a>
 
 						</li>
-				<li class="active main">
+				<li class="main">
 					<a href="namespace-DatabaseBackup.TestSuite.html">
 						TestSuite					</a>
 
@@ -59,8 +59,7 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DriverTestCase</a></li>
-				<li class="active"><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
+				<li class="active"><a href="class-DatabaseBackup.Console.Command.html">Command</a></li>
 			</ul>
 
 
@@ -87,7 +86,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-DatabaseBackup.TestSuite.html" title="Summary of DatabaseBackup\TestSuite"><span>Namespace</span></a>
+				<a href="namespace-DatabaseBackup.Console.html" title="Summary of DatabaseBackup\Console"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -112,22 +111,22 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class TestCase</h1>
+	<h1>Class Command</h1>
 
 
 	<div class="description">
-	<p>TestCase class</p>
+	<p>Base class for console commands</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-MeTools\TestSuite\TestCase
+MeTools\Console\Command
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-<b><span>DatabaseBackup\TestSuite\TestCase</span></b>			
+<b><span>DatabaseBackup\Console\Command</span></b>			
 			
 			 uses 
 					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
@@ -138,7 +137,12 @@ MeTools\TestSuite\TestCase
 
 	<div>
 		<h4>Direct known subclasses</h4>
-			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
+			<a href="class-DatabaseBackup.Command.DeleteAllCommand.html">DatabaseBackup\Command\DeleteAllCommand</a>, 
+			<a href="class-DatabaseBackup.Command.ExportCommand.html">DatabaseBackup\Command\ExportCommand</a>, 
+			<a href="class-DatabaseBackup.Command.ImportCommand.html">DatabaseBackup\Command\ImportCommand</a>, 
+			<a href="class-DatabaseBackup.Command.IndexCommand.html">DatabaseBackup\Command\IndexCommand</a>, 
+			<a href="class-DatabaseBackup.Command.RotateCommand.html">DatabaseBackup\Command\RotateCommand</a>, 
+			<a href="class-DatabaseBackup.Command.SendCommand.html">DatabaseBackup\Command\SendCommand</a>
 	</div>
 
 
@@ -147,12 +151,12 @@ MeTools\TestSuite\TestCase
 
 
 	<div class="info">
-		<b>Abstract</b><br>
 		
-		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.TestSuite.html">TestSuite</a><br>
+		
+		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Console.html">Console</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.TestCase.html#21-86" title="Go to source code">TestSuite/TestCase.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Console.Command.html#21-45" title="Go to source code">Console/Command.php</a>
 		<br>
 	</div>
 
@@ -160,147 +164,42 @@ MeTools\TestSuite\TestCase
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="setUp" id="_setUp">
+	<tr data-order="execute" id="_execute">
 
 		<td class="attributes"><code>
 			 public 
 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#33-44" title="Go to source code">setUp</a>( )</code>
-
-		<div class="description short">
-			<p>Called before every test method</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Called before every test method</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tearDown" id="_tearDown">
-
-		<td class="attributes"><code>
-			 public 
-
-			
+			null|integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#46-56" title="Go to source code">tearDown</a>( )</code>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-DatabaseBackup.Console.Command.html#28-44" title="Go to source code">execute</a>( <span>Cake\Console\Arguments <var>$args</var></span>, <span>Cake\Console\ConsoleIo <var>$io</var></span> )</code>
 
 		<div class="description short">
-			<p>Called after every test method</p>
+			<p>Implement this method with your command's logic</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Called after every test method</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="createBackup" id="_createBackup">
-
-		<td class="attributes"><code>
-			 protected 
-
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_createBackup">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#58-66" title="Go to source code">createBackup</a>( <span>string <var>$filename</var> = <span class="php-quote">'backup.sql'</span></span> )</code>
-
-		<div class="description short">
-			<p>Internal method to create a backup file</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Internal method to create a backup file</p>
+			<p>Implement this method with your command's logic</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
-					<dt><var>$filename</var></dt>
-					<dd>Filename</dd>
+					<dt><var>$args</var></dt>
+					<dd>The command arguments</dd>
+					<dt><var>$io</var></dt>
+					<dd>The console io</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					string
+					null|integer<br>The exit code or null for success
 				</div>
 
 
-				<h4>Used by</h4>
-				<div class="list">
-						DatabaseBackup\TestSuite\TestCase::createSomeBackups()<br>
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="createSomeBackups" id="_createSomeBackups">
-
-		<td class="attributes"><code>
-			 protected 
-
-			array
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_createSomeBackups">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#68-85" title="Go to source code">createSomeBackups</a>( <span>boolean <var>$sleep</var> = <span class="php-keyword1">false</span></span> )</code>
-
-		<div class="description short">
-			<p>Internal method to creates some backup files</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Internal method to creates some backup files</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$sleep</var></dt>
-					<dd>If <code>true</code>, waits a second for each backup</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					array
-				</div>
-
-
-				<h4>Uses</h4>
-				<div class="list">
-						<code><a href="class-DatabaseBackup.TestSuite.TestCase.html#_createBackup">DatabaseBackup\TestSuite\TestCase::createBackup()</a></code><br>
-				</div>
 
 
 		</div>
@@ -335,34 +234,6 @@ MeTools\TestSuite\TestCase
 
 
 
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="BackupExport" id="$BackupExport">
-		<td class="attributes"><code>
-			protected  
-			<code><a href="class-DatabaseBackup.Utility.BackupExport.html">DatabaseBackup\Utility\BackupExport</a></code>
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.TestCase.html#28-31" title="Go to source code"><var>$BackupExport</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$BackupExport" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
-	</table>
 
 
 	<table class="summary used">

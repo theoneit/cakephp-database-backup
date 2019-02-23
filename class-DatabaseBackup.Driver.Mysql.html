@@ -24,14 +24,19 @@
 					</a>
 
 						<ul>
-				<li class="active main">
-					<a href="namespace-DatabaseBackup.Driver.html">
-						Driver					</a>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Command.html">
+						Command					</a>
 
 						</li>
 				<li class="main">
-					<a href="namespace-DatabaseBackup.Shell.html">
-						Shell					</a>
+					<a href="namespace-DatabaseBackup.Console.html">
+						Console					</a>
+
+						</li>
+				<li class="active main">
+					<a href="namespace-DatabaseBackup.Driver.html">
+						Driver					</a>
 
 						</li>
 				<li class="main">
@@ -124,6 +129,8 @@
 <span>Cake\Event\EventListenerInterface</span>
 			
 			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>, 
+			
 					Cake\Event\EventDispatcherTrait (not available)
 
 			
@@ -132,8 +139,6 @@
 			<img src="resources/inherit.png" alt="Extended by">
 <b><span>DatabaseBackup\Driver\Mysql</span></b>			
 			
-			 uses 
-					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
 			
 		</dd>
 	</dl>
@@ -151,7 +156,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Driver.html">Driver</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Mysql.html#19-174" title="Go to source code">Driver/Mysql.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Mysql.html#18-167" title="Go to source code">Driver/Mysql.php</a>
 		<br>
 	</div>
 
@@ -171,7 +176,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__exportExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#33-47" title="Go to source code">_exportExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#30-44" title="Go to source code">_exportExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the executable command to export the database</p>
@@ -210,7 +215,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__importExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#49-63" title="Go to source code">_importExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#46-60" title="Go to source code">_importExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the executable command to import the database</p>
@@ -242,14 +247,14 @@
 		<td class="attributes"><code>
 			 protected 
 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_writeAuthFile">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#65-84" title="Go to source code">writeAuthFile</a>( <span>string <var>$content</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#62-81" title="Go to source code">writeAuthFile</a>( <span>string <var>$content</var></span> )</code>
 
 		<div class="description short">
 			<p>Internal method to write an auth file</p>
@@ -265,6 +270,10 @@
 					<dd>Content</dd>
 				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
 
 
 				<h4>Since</h4>
@@ -298,7 +307,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_afterExport">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#86-95" title="Go to source code">afterExport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#83-92" title="Go to source code">afterExport</a>( )</code>
 
 		<div class="description short">
 			<p>Called after export</p>
@@ -338,7 +347,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_afterImport">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#97-106" title="Go to source code">afterImport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#94-103" title="Go to source code">afterImport</a>( )</code>
 
 		<div class="description short">
 			<p>Called after import</p>
@@ -378,7 +387,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beforeExport">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#108-130" title="Go to source code">beforeExport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#105-125" title="Go to source code">beforeExport</a>( )</code>
 
 		<div class="description short">
 			<p>Called before export.</p>
@@ -427,7 +436,7 @@ So it creates a temporary file to store the configuration options</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beforeImport">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#132-154" title="Go to source code">beforeImport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#127-147" title="Go to source code">beforeImport</a>( )</code>
 
 		<div class="description short">
 			<p>Called before export.</p>
@@ -475,7 +484,7 @@ So it creates a temporary file to store the configuration options</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteAuthFile">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#156-173" title="Go to source code">deleteAuthFile</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Mysql.html#149-166" title="Go to source code">deleteAuthFile</a>( )</code>
 
 		<div class="description short">
 			<p>Deletes the temporary file with the database authentication data</p>
@@ -562,7 +571,7 @@ So it creates a temporary file to store the configuration options</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Driver.Mysql.html#26-31" title="Go to source code"><var>$auth</var></a>
+				<a href="source-class-DatabaseBackup.Driver.Mysql.html#23-28" title="Go to source code"><var>$auth</var></a>
 
 			<div class="description short">
 				<p>Temporary file with the database authentication data</p>
