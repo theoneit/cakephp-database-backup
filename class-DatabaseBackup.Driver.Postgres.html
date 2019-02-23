@@ -24,19 +24,14 @@
 					</a>
 
 						<ul>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Command.html">
-						Command					</a>
-
-						</li>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Console.html">
-						Console					</a>
-
-						</li>
 				<li class="active main">
 					<a href="namespace-DatabaseBackup.Driver.html">
 						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Shell.html">
+						Shell					</a>
 
 						</li>
 				<li class="main">
@@ -129,8 +124,6 @@
 <span>Cake\Event\EventListenerInterface</span>
 			
 			 uses 
-					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>, 
-			
 					Cake\Event\EventDispatcherTrait (not available)
 
 			
@@ -139,6 +132,8 @@
 			<img src="resources/inherit.png" alt="Extended by">
 <b><span>DatabaseBackup\Driver\Postgres</span></b>			
 			
+			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
 			
 		</dd>
 	</dl>
@@ -156,7 +151,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Driver.html">Driver</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Postgres.html#18-65" title="Go to source code">Driver/Postgres.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Driver.Postgres.html#19-74" title="Go to source code">Driver/Postgres.php</a>
 		<br>
 	</div>
 
@@ -176,7 +171,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDbnameAsString">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#23-44" title="Go to source code">getDbnameAsString</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#26-53" title="Go to source code">getDbnameAsString</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the value for the <code>--dbname</code> option for export and import
@@ -225,7 +220,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__exportExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#46-54" title="Go to source code">_exportExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#55-63" title="Go to source code">_exportExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the executable command to export the database</p>
@@ -263,7 +258,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#__importExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#56-64" title="Go to source code">_importExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Driver.Postgres.html#65-73" title="Go to source code">_importExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the executable command to import the database</p>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class DatabaseBackup\TestSuite\TestCase | cakephp-database-backup</title>
+	<title>Trait DatabaseBackup\TestSuite\TestCaseTrait | cakephp-database-backup</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -56,13 +56,13 @@
 			<ul>
 				<li><a href="class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html">ConsoleIntegrationTestCase</a></li>
 				<li><a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DriverTestCase</a></li>
-				<li class="active"><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
+				<li><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
 			</ul>
 
 
 			<h3>Traits</h3>
 			<ul>
-				<li><a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html">TestCaseTrait</a></li>
+				<li class="active"><a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html">TestCaseTrait</a></li>
 			</ul>
 
 
@@ -112,53 +112,37 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class TestCase</h1>
+	<h1>Trait TestCaseTrait</h1>
 
 
 	<div class="description">
-	<p>TestCase class</p>
+	<p>TestCaseTrait class</p>
 	</div>
 
-	<dl class="tree">
-		<dd style="padding-left:0px">
-Cake\TestSuite\TestCase
-			
-			
-		</dd>
-		<dd style="padding-left:30px">
-			<img src="resources/inherit.png" alt="Extended by">
-<b><span>DatabaseBackup\TestSuite\TestCase</span></b>			
-			
-			 uses 
-					Tools\ReflectionTrait (not available)
 
-			
-					<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html"><span>DatabaseBackup\TestSuite\TestCaseTrait</span></a>, 
-			
-					Tools\TestSuite\TestCaseTrait (not available)
 
-			
-		</dd>
-	</dl>
+
+
 
 
 	<div>
-		<h4>Direct known subclasses</h4>
+		<h4>Direct Known Users</h4>
+			<a href="class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html">DatabaseBackup\TestSuite\ConsoleIntegrationTestCase</a>, 
+			<a href="class-DatabaseBackup.TestSuite.TestCase.html">DatabaseBackup\TestSuite\TestCase</a>
+	</div>
+
+	<div>
+		<h4>Indirect Known Users</h4>
 			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
 	</div>
 
-
-
-
-
-
 	<div class="info">
-		<b>Abstract</b><br>
+		
 		
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.TestCase.html#22-70" title="Go to source code">TestSuite/TestCase.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.TestCaseTrait.html#18-66" title="Go to source code">TestSuite/TestCaseTrait.php</a>
 		<br>
 	</div>
 
@@ -166,32 +150,33 @@ Cake\TestSuite\TestCase
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="setUp" id="_setUp">
+	<tr data-order="createBackup" id="_createBackup">
 
 		<td class="attributes"><code>
-			 public 
+			 protected 
 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#31-42" title="Go to source code">setUp</a>( )</code>
+		<a class="anchor" href="#_createBackup">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.TestCaseTrait.html#23-30" title="Go to source code">createBackup</a>( )</code>
 
 		<div class="description short">
-			<p>Setup the test case, backup the static object values so they can be
-restored. Specifically backs up the contents of Configure and paths in
- App if they have not already been backed up</p>
+			<p>Internal method to create a backup file</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Setup the test case, backup the static object values so they can be
-restored. Specifically backs up the contents of Configure and paths in App if they have not already been backed up</p>
+			<p>Internal method to create a backup file</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
 
 
 
@@ -199,7 +184,46 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="tearDown" id="_tearDown">
+	<tr data-order="createSomeBackups" id="_createSomeBackups">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createSomeBackups">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.TestCaseTrait.html#32-54" title="Go to source code">createSomeBackups</a>( <span>boolean <var>$sleep</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Internal method to creates some backup files</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Internal method to creates some backup files</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sleep</var></dt>
+					<dd>If <code>true</code>, waits a second for each backup</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteAllBackups" id="_deleteAllBackups">
 
 		<td class="attributes"><code>
 			 public 
@@ -210,72 +234,33 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#44-56" title="Go to source code">tearDown</a>( )</code>
+		<a class="anchor" href="#_deleteAllBackups">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.TestCaseTrait.html#56-65" title="Go to source code">deleteAllBackups</a>( )</code>
 
 		<div class="description short">
-			<p>Teardown any static object changes and restore them</p>
+			<p>Deletes all backups</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Teardown any static object changes and restore them</p>
+			<p>Deletes all backups</p>
 
 
 
 
 
-				<h4>Uses</h4>
+				<h4>Used by</h4>
 				<div class="list">
-						<code><a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_deleteAllBackups">DatabaseBackup\TestSuite\TestCaseTrait::deleteAllBackups()</a></code><br>
+						DatabaseBackup\TestSuite\ConsoleIntegrationTestCase::tearDown()<br>
+						DatabaseBackup\TestSuite\TestCase::tearDown()<br>
 				</div>
 
 
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="loadFixtures" id="_loadFixtures">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_loadFixtures">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#58-69" title="Go to source code">loadFixtures</a>( )</code>
-
-		<div class="description short">
-			<p>Loads all fixtures declared in the <code>$fixtures</code> property</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Loads all fixtures declared in the <code>$fixtures</code> property</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	</table>
 
 
-	<table class="summary used">
-	<caption>Methods used from <a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#methods">DatabaseBackup\TestSuite\TestCaseTrait</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_createBackup">createBackup()</a>, 
-			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_createSomeBackups">createSomeBackups()</a>, 
-			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_deleteAllBackups">deleteAllBackups()</a>
-		</code></td>
-	</tr>
-	</table>
 
 
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class DatabaseBackup\TestSuite\TestCase | cakephp-database-backup</title>
+	<title>Class DatabaseBackup\TestSuite\ConsoleIntegrationTestCase | cakephp-database-backup</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -54,9 +54,9 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html">ConsoleIntegrationTestCase</a></li>
+				<li class="active"><a href="class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html">ConsoleIntegrationTestCase</a></li>
 				<li><a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DriverTestCase</a></li>
-				<li class="active"><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
+				<li><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
 			</ul>
 
 
@@ -112,40 +112,30 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class TestCase</h1>
+	<h1>Class ConsoleIntegrationTestCase</h1>
 
 
 	<div class="description">
-	<p>TestCase class</p>
+	<p>ConsoleIntegrationTestCase class</p>
 	</div>
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-Cake\TestSuite\TestCase
+Cake\TestSuite\ConsoleIntegrationTestCase
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-<b><span>DatabaseBackup\TestSuite\TestCase</span></b>			
+<b><span>DatabaseBackup\TestSuite\ConsoleIntegrationTestCase</span></b>			
 			
 			 uses 
-					Tools\ReflectionTrait (not available)
-
-			
-					<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html"><span>DatabaseBackup\TestSuite\TestCaseTrait</span></a>, 
-			
-					Tools\TestSuite\TestCaseTrait (not available)
-
+					<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html"><span>DatabaseBackup\TestSuite\TestCaseTrait</span></a>
 			
 		</dd>
 	</dl>
 
 
-	<div>
-		<h4>Direct known subclasses</h4>
-			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
-	</div>
 
 
 
@@ -153,12 +143,12 @@ Cake\TestSuite\TestCase
 
 
 	<div class="info">
-		<b>Abstract</b><br>
+		
 		
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.TestCase.html#22-70" title="Go to source code">TestSuite/TestCase.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#22-84" title="Go to source code">TestSuite/ConsoleIntegrationTestCase.php</a>
 		<br>
 	</div>
 
@@ -178,7 +168,7 @@ Cake\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#31-42" title="Go to source code">setUp</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#34-47" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
 			<p>Setup the test case, backup the static object values so they can be
@@ -211,7 +201,7 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 
 		<td class="name"><div>
 		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#44-56" title="Go to source code">tearDown</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#49-61" title="Go to source code">tearDown</a>( )</code>
 
 		<div class="description short">
 			<p>Teardown any static object changes and restore them</p>
@@ -233,7 +223,7 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="loadFixtures" id="_loadFixtures">
+	<tr data-order="assertExitWithError" id="_assertExitWithError">
 
 		<td class="attributes"><code>
 			 public 
@@ -244,17 +234,59 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_loadFixtures">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.TestCase.html#58-69" title="Go to source code">loadFixtures</a>( )</code>
+		<a class="anchor" href="#_assertExitWithError">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#63-72" title="Go to source code">assertExitWithError</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
-			<p>Loads all fixtures declared in the <code>$fixtures</code> property</p>
+			<p>Asserts shell exited with the error code</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Loads all fixtures declared in the <code>$fixtures</code> property</p>
+			<p>Asserts shell exited with the error code</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><p>Failure message to be appended to the generated
+ message</p></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="assertExitWithSuccess" id="_assertExitWithSuccess">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_assertExitWithSuccess">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#74-83" title="Go to source code">assertExitWithSuccess</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Asserts shell exited with the success code</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Asserts shell exited with the success code</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><p>Failure message to be appended to the generated
+ message</p></dd>
+				</dl></div>
 
 
 
@@ -286,6 +318,34 @@ restored. Specifically backs up the contents of Configure and paths in App if th
 
 
 
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="BackupExport" id="$BackupExport">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-DatabaseBackup.Utility.BackupExport.html">DatabaseBackup\Utility\BackupExport</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html#29-32" title="Go to source code"><var>$BackupExport</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$BackupExport" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
 
 
 

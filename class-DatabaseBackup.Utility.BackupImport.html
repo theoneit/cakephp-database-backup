@@ -25,18 +25,13 @@
 
 						<ul>
 				<li class="main">
-					<a href="namespace-DatabaseBackup.Command.html">
-						Command					</a>
-
-						</li>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Console.html">
-						Console					</a>
-
-						</li>
-				<li class="main">
 					<a href="namespace-DatabaseBackup.Driver.html">
 						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Shell.html">
+						Shell					</a>
 
 						</li>
 				<li class="main">
@@ -143,7 +138,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Utility.html">Utility</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupImport.html#19-91" title="Go to source code">Utility/BackupImport.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupImport.html#20-100" title="Go to source code">Utility/BackupImport.php</a>
 		<br>
 	</div>
 
@@ -163,7 +158,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#40-47" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#41-48" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Construct</p>
@@ -197,7 +192,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filename">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#49-68" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#50-75" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the filename</p>
@@ -220,7 +215,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException
+					InvalidArgumentException<br>
+					RuntimeException
 				</div>
 
 				<h4>See</h4>
@@ -248,7 +244,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_import">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#70-90" title="Go to source code">import</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupImport.html#77-99" title="Go to source code">import</a>( )</code>
 
 		<div class="description short">
 			<p>Imports the database</p>
@@ -266,7 +262,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException
+					RuntimeException
 				</div>
 
 				<h4>See</h4>
@@ -321,7 +317,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupImport.html#26-32" title="Go to source code"><var>$driver</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupImport.html#27-33" title="Go to source code"><var>$driver</var></a>
 
 			<div class="description short">
 				<p>Driver containing all methods to export/import database backups
@@ -356,7 +352,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupImport.html#34-38" title="Go to source code"><var>$filename</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupImport.html#35-39" title="Go to source code"><var>$filename</var></a>
 
 			<div class="description short">
 				<p>Filename where to import the database</p>

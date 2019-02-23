@@ -25,18 +25,13 @@
 
 						<ul>
 				<li class="main">
-					<a href="namespace-DatabaseBackup.Command.html">
-						Command					</a>
-
-						</li>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Console.html">
-						Console					</a>
-
-						</li>
-				<li class="main">
 					<a href="namespace-DatabaseBackup.Driver.html">
 						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Shell.html">
+						Shell					</a>
 
 						</li>
 				<li class="active main">
@@ -59,11 +54,16 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-DatabaseBackup.TestSuite.ConsoleIntegrationTestCase.html">ConsoleIntegrationTestCase</a></li>
 				<li class="active"><a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DriverTestCase</a></li>
 				<li><a href="class-DatabaseBackup.TestSuite.TestCase.html">TestCase</a></li>
 			</ul>
 
 
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html">TestCaseTrait</a></li>
+			</ul>
 
 
 
@@ -123,7 +123,7 @@
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-MeTools\TestSuite\TestCase
+Cake\TestSuite\TestCase
 			
 			
 		</dd>
@@ -133,13 +133,24 @@ MeTools\TestSuite\TestCase
 			
 			
 			 uses 
-					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>
+					Tools\ReflectionTrait (not available)
+
+			
+					<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html"><span>DatabaseBackup\TestSuite\TestCaseTrait</span></a>, 
+			
+					Tools\TestSuite\TestCaseTrait (not available)
+
 			
 		</dd>
 		<dd style="padding-left:60px">
 			<img src="resources/inherit.png" alt="Extended by">
 <b><span>DatabaseBackup\TestSuite\DriverTestCase</span></b>			
 			
+			 uses 
+					<a href="class-DatabaseBackup.BackupTrait.html"><span>DatabaseBackup\BackupTrait</span></a>, 
+			
+					Tools\ReflectionTrait (not available)
+
 			
 		</dd>
 	</dl>
@@ -157,7 +168,7 @@ MeTools\TestSuite\TestCase
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.TestSuite.html">TestSuite</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#22-328" title="Go to source code">TestSuite/DriverTestCase.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#22-339" title="Go to source code">TestSuite/DriverTestCase.php</a>
 		<br>
 	</div>
 
@@ -177,14 +188,17 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#67-84" title="Go to source code">setUp</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#58-76" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
-			<p>Called before every test method</p>
+			<p>Setup the test case, backup the static object values so they can be
+restored. Specifically backs up the contents of Configure and paths in
+ App if they have not already been backed up</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Called before every test method</p>
+			<p>Setup the test case, backup the static object values so they can be
+restored. Specifically backs up the contents of Configure and paths in App if they have not already been backed up</p>
 
 
 
@@ -197,7 +211,39 @@ MeTools\TestSuite\TestCase
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getAllRecords" id="_getAllRecords">
+	<tr data-order="tearDown" id="_tearDown">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tearDown">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#78-87" title="Go to source code">tearDown</a>( )</code>
+
+		<div class="description short">
+			<p>Teardown any static object changes and restore them</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Teardown any static object changes and restore them</p>
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-DatabaseBackup.TestSuite.TestCase.html#_tearDown">DatabaseBackup\TestSuite\TestCase::tearDown()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="allRecords" id="_allRecords">
 
 		<td class="attributes"><code>
 			final protected 
@@ -208,8 +254,8 @@ MeTools\TestSuite\TestCase
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getAllRecords">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#86-97" title="Go to source code">getAllRecords</a>( )</code>
+		<a class="anchor" href="#_allRecords">#</a>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#89-100" title="Go to source code">allRecords</a>( )</code>
 
 		<div class="description short">
 			<p>Internal method to get all records from the database</p>
@@ -231,53 +277,6 @@ MeTools\TestSuite\TestCase
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getMockForDriver" id="_getMockForDriver">
-
-		<td class="attributes"><code>
-			final protected 
-
-			<code><a href="class-DatabaseBackup.Driver.Driver.html">DatabaseBackup\Driver\Driver</a></code>|PHPUnit_Framework_MockObject_MockObject
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getMockForDriver">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#99-112" title="Go to source code">getMockForDriver</a>( <span>array <var>$methods</var></span> )</code>
-
-		<div class="description short">
-			<p>Internal method to mock a driver</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Internal method to mock a driver</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$methods</var></dt>
-					<dd>The list of methods to mock</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code><a href="class-DatabaseBackup.Driver.Driver.html">DatabaseBackup\Driver\Driver</a></code>|PHPUnit_Framework_MockObject_MockObject
-				</div>
-
-
-				<h4>Since</h4>
-				<div class="list">
-						2.6.1<br>
-				</div>
-				<h4>Uses</h4>
-				<div class="list">
-						<br>
-				</div>
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="testConstruct" id="_testConstruct">
 
 		<td class="attributes"><code>
@@ -290,7 +289,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testConstruct">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#114-122" title="Go to source code">testConstruct</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#102-110" title="Go to source code">testConstruct</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>__construct()</code> method</p>
@@ -323,7 +322,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExportExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#124-128" title="Go to source code">testExportExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#112-116" title="Go to source code">testExportExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>_exportExecutable()</code> method</p>
@@ -353,7 +352,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExportOnFailure">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#130-134" title="Go to source code">testExportOnFailure</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#118-122" title="Go to source code">testExportOnFailure</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>export()</code> method on failure</p>
@@ -383,7 +382,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testImportExecutable">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#136-140" title="Go to source code">testImportExecutable</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#124-128" title="Go to source code">testImportExecutable</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>_importExecutable()</code> method</p>
@@ -413,7 +412,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testImportOnFailure">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#142-146" title="Go to source code">testImportOnFailure</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#130-134" title="Go to source code">testImportOnFailure</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>import()</code> method on failure</p>
@@ -443,7 +442,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExportExecutableWithCompression">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#148-174" title="Go to source code">testExportExecutableWithCompression</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#136-162" title="Go to source code">testExportExecutableWithCompression</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>_exportExecutableWithCompression()</code> method</p>
@@ -476,7 +475,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testImportExecutableWithCompression">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#176-202" title="Go to source code">testImportExecutableWithCompression</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#164-190" title="Go to source code">testImportExecutableWithCompression</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>_importExecutableWithCompression()</code> method</p>
@@ -509,7 +508,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExport">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#204-216" title="Go to source code">testExport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#192-205" title="Go to source code">testExport</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>export()</code> method</p>
@@ -542,7 +541,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExportStoppedByBeforeExport">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#218-231" title="Go to source code">testExportStoppedByBeforeExport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#207-227" title="Go to source code">testExportStoppedByBeforeExport</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>export()</code> method. Export is stopped because the
@@ -576,7 +575,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetConfig">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#233-244" title="Go to source code">testGetConfig</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#229-240" title="Go to source code">testGetConfig</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>getConfig()</code> method</p>
@@ -609,7 +608,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testImport">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#246-258" title="Go to source code">testImport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#242-255" title="Go to source code">testImport</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>import()</code> method</p>
@@ -642,7 +641,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testImportStoppedByBeforeExport">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#260-273" title="Go to source code">testImportStoppedByBeforeExport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#257-277" title="Go to source code">testImportStoppedByBeforeExport</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>import()</code> method. Import is stopped because the
@@ -676,7 +675,7 @@ MeTools\TestSuite\TestCase
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExportAndImport">#</a>
-		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#275-327" title="Go to source code">testExportAndImport</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#279-338" title="Go to source code">testExportAndImport</a>( )</code>
 
 		<div class="description short">
 			<p>Test for <code>export()</code> and <code>import()</code> methods.</p>
@@ -705,9 +704,7 @@ MeTools\TestSuite\TestCase
 	<caption>Methods inherited from <a href="class-DatabaseBackup.TestSuite.TestCase.html#methods">DatabaseBackup\TestSuite\TestCase</a></caption>
 	<tr>
 		<td><code>
-			<a href="class-DatabaseBackup.TestSuite.TestCase.html#_createBackup">createBackup()</a>, 
-			<a href="class-DatabaseBackup.TestSuite.TestCase.html#_createSomeBackups">createSomeBackups()</a>, 
-			<a href="class-DatabaseBackup.TestSuite.TestCase.html#_tearDown">tearDown()</a>
+			<a href="class-DatabaseBackup.TestSuite.TestCase.html#_loadFixtures">loadFixtures()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -725,6 +722,16 @@ MeTools\TestSuite\TestCase
 			<a href="class-DatabaseBackup.BackupTrait.html#_getTarget">getTarget()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">getValidCompressions()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getValidExtensions">getValidExtensions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#methods">DatabaseBackup\TestSuite\TestCaseTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_createBackup">createBackup()</a>, 
+			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_createSomeBackups">createSomeBackups()</a>, 
+			<a href="class-DatabaseBackup.TestSuite.TestCaseTrait.html#_deleteAllBackups">deleteAllBackups()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -747,7 +754,7 @@ MeTools\TestSuite\TestCase
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#29-32" title="Go to source code"><var>$Articles</var></a>
+				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#32-35" title="Go to source code"><var>$Articles</var></a>
 
 			<div class="description short">
 				
@@ -772,7 +779,7 @@ MeTools\TestSuite\TestCase
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#34-37" title="Go to source code"><var>$Comments</var></a>
+				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#37-40" title="Go to source code"><var>$Comments</var></a>
 
 			<div class="description short">
 				
@@ -797,7 +804,7 @@ MeTools\TestSuite\TestCase
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#39-42" title="Go to source code"><var>$Driver</var></a>
+				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#42-45" title="Go to source code"><var>$Driver</var></a>
 
 			<div class="description short">
 				
@@ -806,44 +813,11 @@ MeTools\TestSuite\TestCase
 			<div class="description detailed hidden">
 				
 
-					<h4>Used by</h4>
-					<div class="list">
-							DatabaseBackup\TestSuite\DriverTestCase::getMockForDriver()<br>
-					</div>
 			</div>
 		</td>
 		<td class="value">
 			<div>
 				<a href="#$Driver" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="DriverClass" id="$DriverClass">
-		<td class="attributes"><code>
-			protected  
-			object
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#44-48" title="Go to source code"><var>$DriverClass</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-					<h4>Since</h4>
-					<div class="list">
-							2.5.1<br>
-					</div>
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$DriverClass" class="anchor">#</a>
 				<code></code>
 			</div>
 		</td>
@@ -855,7 +829,7 @@ MeTools\TestSuite\TestCase
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#50-53" title="Go to source code"><var>$autoFixtures</var></a>
+				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#47-50" title="Go to source code"><var>$autoFixtures</var></a>
 
 			<div class="description short">
 				
@@ -873,31 +847,6 @@ MeTools\TestSuite\TestCase
 			</div>
 		</td>
 	</tr>
-	<tr data-order="connection" id="$connection">
-		<td class="attributes"><code>
-			protected  
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#55-59" title="Go to source code"><var>$connection</var></a>
-
-			<div class="description short">
-				<p>Name of the database connection</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>Name of the database connection</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$connection" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="fixtures" id="$fixtures">
 		<td class="attributes"><code>
 			public  
@@ -905,7 +854,7 @@ MeTools\TestSuite\TestCase
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#61-65" title="Go to source code"><var>$fixtures</var></a>
+				<a href="source-class-DatabaseBackup.TestSuite.DriverTestCase.html#52-56" title="Go to source code"><var>$fixtures</var></a>
 
 			<div class="description short">
 				<p>Fixtures</p>
@@ -925,14 +874,6 @@ MeTools\TestSuite\TestCase
 	</tr>
 	</table>
 
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-DatabaseBackup.TestSuite.TestCase.html#properties">DatabaseBackup\TestSuite\TestCase</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-DatabaseBackup.TestSuite.TestCase.html#$BackupExport"><var>$BackupExport</var></a>
-		</code></td>
-	</tr>
-	</table>
 
 	<table class="summary used">
 	<caption>Properties used from <a href="class-DatabaseBackup.BackupTrait.html#properties">DatabaseBackup\BackupTrait</a></caption>

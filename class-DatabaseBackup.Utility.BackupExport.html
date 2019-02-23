@@ -25,18 +25,13 @@
 
 						<ul>
 				<li class="main">
-					<a href="namespace-DatabaseBackup.Command.html">
-						Command					</a>
-
-						</li>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Console.html">
-						Console					</a>
-
-						</li>
-				<li class="main">
 					<a href="namespace-DatabaseBackup.Driver.html">
 						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Shell.html">
+						Shell					</a>
 
 						</li>
 				<li class="main">
@@ -143,7 +138,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Utility.html">Utility</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#20-233" title="Go to source code">Utility/BackupExport.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#21-254" title="Go to source code">Utility/BackupExport.php</a>
 		<br>
 	</div>
 
@@ -163,7 +158,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#83-95" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#84-98" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Construct</p>
@@ -199,7 +194,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_compression">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#97-120" title="Go to source code">compression</a>( <span>boolean|string <var>$compression</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#100-127" title="Go to source code">compression</a>( <span>boolean|string <var>$compression</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the compression</p>
@@ -254,7 +249,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filename">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#122-158" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#129-179" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the filename.</p>
@@ -280,7 +275,8 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException
+					InvalidArgumentException<br>
+					RuntimeException
 				</div>
 
 				<h4>See</h4>
@@ -310,7 +306,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rotate">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#160-173" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#181-194" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the number of backups you want to keep. So, it will delete all
@@ -359,7 +355,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_send">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#175-187" title="Go to source code">send</a>( <span>boolean|string <var>$recipient</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#196-208" title="Go to source code">send</a>( <span>boolean|string <var>$recipient</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Sets the recipient's email address to send the backup file via mail</p>
@@ -406,7 +402,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_export">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#189-232" title="Go to source code">export</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#210-253" title="Go to source code">export</a>( )</code>
 
 		<div class="description short">
 			<p>Exports the database</p>
@@ -480,7 +476,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#27-30" title="Go to source code"><var>$BackupManager</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#28-31" title="Go to source code"><var>$BackupManager</var></a>
 
 			<div class="description short">
 				
@@ -509,7 +505,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#32-36" title="Go to source code"><var>$compression</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#33-37" title="Go to source code"><var>$compression</var></a>
 
 			<div class="description short">
 				<p>Compression type</p>
@@ -539,7 +535,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#38-42" title="Go to source code"><var>$config</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#39-43" title="Go to source code"><var>$config</var></a>
 
 			<div class="description short">
 				<p>Database configuration</p>
@@ -569,7 +565,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#44-48" title="Go to source code"><var>$defaultExtension</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#45-49" title="Go to source code"><var>$defaultExtension</var></a>
 
 			<div class="description short">
 				<p>Default extension</p>
@@ -599,7 +595,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#50-56" title="Go to source code"><var>$driver</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#51-57" title="Go to source code"><var>$driver</var></a>
 
 			<div class="description short">
 				<p>Driver containing all methods to export/import database backups
@@ -633,7 +629,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#58-62" title="Go to source code"><var>$emailRecipient</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#59-63" title="Go to source code"><var>$emailRecipient</var></a>
 
 			<div class="description short">
 				<p>Recipient of the email, if you want to send the backup via mail</p>
@@ -663,7 +659,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#64-68" title="Go to source code"><var>$extension</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#65-69" title="Go to source code"><var>$extension</var></a>
 
 			<div class="description short">
 				<p>Filename extension</p>
@@ -693,7 +689,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#70-74" title="Go to source code"><var>$filename</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#71-75" title="Go to source code"><var>$filename</var></a>
 
 			<div class="description short">
 				<p>Filename where to export the database</p>
@@ -724,7 +720,7 @@ backups that are older</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#76-81" title="Go to source code"><var>$rotate</var></a>
+				<a href="source-class-DatabaseBackup.Utility.BackupExport.html#77-82" title="Go to source code"><var>$rotate</var></a>
 
 			<div class="description short">
 				<p>Rotate limit. This is the number of backups you want to keep. So, it

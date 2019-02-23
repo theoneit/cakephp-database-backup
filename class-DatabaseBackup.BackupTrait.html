@@ -25,18 +25,13 @@
 
 						<ul>
 				<li class="main">
-					<a href="namespace-DatabaseBackup.Command.html">
-						Command					</a>
-
-						</li>
-				<li class="main">
-					<a href="namespace-DatabaseBackup.Console.html">
-						Console					</a>
-
-						</li>
-				<li class="main">
 					<a href="namespace-DatabaseBackup.Driver.html">
 						Driver					</a>
+
+						</li>
+				<li class="main">
+					<a href="namespace-DatabaseBackup.Shell.html">
+						Shell					</a>
 
 						</li>
 				<li class="main">
@@ -57,10 +52,6 @@
 
 
 		<div id="elements">
-			<h3>Classes</h3>
-			<ul>
-				<li><a href="class-DatabaseBackup.Plugin.html">Plugin</a></li>
-			</ul>
 
 
 			<h3>Traits</h3>
@@ -130,27 +121,16 @@
 
 	<div>
 		<h4>Direct Known Users</h4>
-			<a href="class-DatabaseBackup.Console.Command.html">DatabaseBackup\Console\Command</a>, 
-			<a href="class-DatabaseBackup.Driver.Driver.html">DatabaseBackup\Driver\Driver</a>, 
-			<a href="class-DatabaseBackup.TestSuite.TestCase.html">DatabaseBackup\TestSuite\TestCase</a>, 
+			<a href="class-DatabaseBackup.Driver.Mysql.html">DatabaseBackup\Driver\Mysql</a>, 
+			<a href="class-DatabaseBackup.Driver.Postgres.html">DatabaseBackup\Driver\Postgres</a>, 
+			<a href="class-DatabaseBackup.Driver.Sqlite.html">DatabaseBackup\Driver\Sqlite</a>, 
+			<a href="class-DatabaseBackup.Shell.BackupShell.html">DatabaseBackup\Shell\BackupShell</a>, 
+			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>, 
 			<a href="class-DatabaseBackup.Utility.BackupExport.html">DatabaseBackup\Utility\BackupExport</a>, 
 			<a href="class-DatabaseBackup.Utility.BackupImport.html">DatabaseBackup\Utility\BackupImport</a>, 
 			<a href="class-DatabaseBackup.Utility.BackupManager.html">DatabaseBackup\Utility\BackupManager</a>
 	</div>
 
-	<div>
-		<h4>Indirect Known Users</h4>
-			<a href="class-DatabaseBackup.Command.DeleteAllCommand.html">DatabaseBackup\Command\DeleteAllCommand</a>, 
-			<a href="class-DatabaseBackup.Command.ExportCommand.html">DatabaseBackup\Command\ExportCommand</a>, 
-			<a href="class-DatabaseBackup.Command.ImportCommand.html">DatabaseBackup\Command\ImportCommand</a>, 
-			<a href="class-DatabaseBackup.Command.IndexCommand.html">DatabaseBackup\Command\IndexCommand</a>, 
-			<a href="class-DatabaseBackup.Command.RotateCommand.html">DatabaseBackup\Command\RotateCommand</a>, 
-			<a href="class-DatabaseBackup.Command.SendCommand.html">DatabaseBackup\Command\SendCommand</a>, 
-			<a href="class-DatabaseBackup.Driver.Mysql.html">DatabaseBackup\Driver\Mysql</a>, 
-			<a href="class-DatabaseBackup.Driver.Postgres.html">DatabaseBackup\Driver\Postgres</a>, 
-			<a href="class-DatabaseBackup.Driver.Sqlite.html">DatabaseBackup\Driver\Sqlite</a>, 
-			<a href="class-DatabaseBackup.TestSuite.DriverTestCase.html">DatabaseBackup\TestSuite\DriverTestCase</a>
-	</div>
 
 	<div class="info">
 		
@@ -158,7 +138,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.BackupTrait.html#22-144" title="Go to source code">BackupTrait.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.BackupTrait.html#22-156" title="Go to source code">BackupTrait.php</a>
 		<br>
 	</div>
 
@@ -264,7 +244,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCompression">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#56-69" title="Go to source code">getCompression</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#56-73" title="Go to source code">getCompression</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the compression type from a filename</p>
@@ -308,7 +288,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConnection">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#71-79" title="Go to source code">getConnection</a>( <span>string|null <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#75-85" title="Go to source code">getConnection</a>( <span>string|null <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Gets the connection array</p>
@@ -351,7 +331,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDriver">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#81-98" title="Go to source code">getDriver</a>( <span>Cake\Datasource\ConnectionInterface <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#87-110" title="Go to source code">getDriver</a>( <span>Cake\Datasource\ConnectionInterface <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Gets the driver containing all methods to export/import database backups
@@ -403,7 +383,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExtension">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#100-112" title="Go to source code">getExtension</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#112-124" title="Go to source code">getExtension</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the extension from a filename</p>
@@ -451,7 +431,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTarget">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#114-121" title="Go to source code">getTarget</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#126-133" title="Go to source code">getTarget</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the target path</p>
@@ -489,7 +469,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValidCompressions">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#123-132" title="Go to source code">getValidCompressions</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#135-144" title="Go to source code">getValidCompressions</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all valid compressions</p>
@@ -516,6 +496,7 @@
 				</div>
 				<h4>Used by</h4>
 				<div class="list">
+						DatabaseBackup\Shell\BackupShell::getOptionParser()<br>
 						DatabaseBackup\Utility\BackupExport::compression()<br>
 						DatabaseBackup\BackupTrait::getCompression()<br>
 				</div>
@@ -536,7 +517,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValidExtensions">#</a>
-		<code><a href="source-class-DatabaseBackup.BackupTrait.html#134-143" title="Go to source code">getValidExtensions</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.BackupTrait.html#146-155" title="Go to source code">getValidExtensions</a>( )</code>
 
 		<div class="description short">
 			<p>Returns all valid extensions</p>
