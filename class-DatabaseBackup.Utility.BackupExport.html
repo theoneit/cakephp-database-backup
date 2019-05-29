@@ -143,7 +143,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Utility.html">Utility</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#20-233" title="Go to source code">Utility/BackupExport.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#20-241" title="Go to source code">Utility/BackupExport.php</a>
 		<br>
 	</div>
 
@@ -199,7 +199,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_compression">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#97-120" title="Go to source code">compression</a>( <span>boolean|string <var>$compression</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#97-124" title="Go to source code">compression</a>( <span>string|null <var>$compression</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the compression</p>
@@ -212,8 +212,8 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$compression</var></dt>
-					<dd><p>Compression type as string. Supported
- values are <code>bzip2</code> and <code>gzip</code>. Use <code>false</code> for no compression</p></dd>
+					<dd><p>Compression type name. Supported
+ values are <code>bzip2</code> and <code>gzip</code>. Use <code>null</code> for no compression</p></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -254,7 +254,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filename">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#122-158" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#126-166" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the filename.</p>
@@ -310,7 +310,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rotate">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#160-173" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#168-181" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the number of backups you want to keep. So, it will delete all
@@ -359,7 +359,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_send">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#175-187" title="Go to source code">send</a>( <span>boolean|string <var>$recipient</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#183-195" title="Go to source code">send</a>( <span>string|null <var>$recipient</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Sets the recipient's email address to send the backup file via mail</p>
@@ -372,7 +372,7 @@ backups that are older</p>
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$recipient</var></dt>
-					<dd>Recipient's email address or <code>false</code> to disable</dd>
+					<dd>Recipient's email address or <code>null</code> to disable</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -406,7 +406,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_export">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#189-232" title="Go to source code">export</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#197-240" title="Go to source code">export</a>( )</code>
 
 		<div class="description short">
 			<p>Exports the database</p>
@@ -454,6 +454,7 @@ backups that are older</p>
 			<a href="class-DatabaseBackup.BackupTrait.html#_getCompression">getCompression()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getConnection">getConnection()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getDriver">getDriver()</a>, 
+			<a href="class-DatabaseBackup.BackupTrait.html#_getDriverName">getDriverName()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getExtension">getExtension()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getTarget">getTarget()</a>, 
 			<a href="class-DatabaseBackup.BackupTrait.html#_getValidCompressions">getValidCompressions()</a>, 
@@ -505,7 +506,7 @@ backups that are older</p>
 	<tr data-order="compression" id="$compression">
 		<td class="attributes"><code>
 			protected  
-			boolean|string|null
+			string|null
 		</code></td>
 
 		<td class="name">
@@ -629,7 +630,7 @@ backups that are older</p>
 	<tr data-order="emailRecipient" id="$emailRecipient">
 		<td class="attributes"><code>
 			protected  
-			boolean|string
+			string|null
 		</code></td>
 
 		<td class="name">
@@ -652,7 +653,7 @@ backups that are older</p>
 		<td class="value">
 			<div>
 				<a href="#$emailRecipient" class="anchor">#</a>
-				<code><span class="php-keyword1">false</span></code>
+				<code><span class="php-keyword1">null</span></code>
 			</div>
 		</td>
 	</tr>
