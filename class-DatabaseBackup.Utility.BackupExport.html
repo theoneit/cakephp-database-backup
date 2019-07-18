@@ -143,7 +143,7 @@
 		<b>Namespace:</b> <a href="namespace-DatabaseBackup.html">DatabaseBackup</a>\<a href="namespace-DatabaseBackup.Utility.html">Utility</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#20-241" title="Go to source code">Utility/BackupExport.php</a>
+			<b>Located at</b> <a href="source-class-DatabaseBackup.Utility.BackupExport.html#20-243" title="Go to source code">Utility/BackupExport.php</a>
 		<br>
 	</div>
 
@@ -254,7 +254,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filename">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#126-166" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#126-168" title="Go to source code">filename</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the filename.</p>
@@ -280,7 +280,9 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					InvalidArgumentException
+					Exception<br>
+					InvalidArgumentException<br>
+					Tools\Exception\NotWritableException
 				</div>
 
 				<h4>See</h4>
@@ -310,7 +312,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rotate">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#168-181" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#170-183" title="Go to source code">rotate</a>( <span>integer <var>$rotate</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the number of backups you want to keep. So, it will delete all
@@ -359,7 +361,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_send">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#183-195" title="Go to source code">send</a>( <span>string|null <var>$recipient</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#185-197" title="Go to source code">send</a>( <span>string|null <var>$recipient</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Sets the recipient's email address to send the backup file via mail</p>
@@ -406,7 +408,7 @@ backups that are older</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_export">#</a>
-		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#197-240" title="Go to source code">export</a>( )</code>
+		<code><a href="source-class-DatabaseBackup.Utility.BackupExport.html#199-242" title="Go to source code">export</a>( )</code>
 
 		<div class="description short">
 			<p>Exports the database</p>
