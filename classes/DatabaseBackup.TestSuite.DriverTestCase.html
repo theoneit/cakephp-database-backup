@@ -78,23 +78,13 @@
 <li class="method public "><a href="#method_setUp" title="setUp() :: Called before every test method"><span class="description">Called before every test method</span><pre>setUp()</pre></a></li>
 <li class="method public inherited"><a href="#method_setUp" title="setUp() :: Called before every test method"><span class="description">Called before every test method</span><pre>setUp()</pre></a></li>
 <li class="method public inherited"><a href="#method_tearDown" title="tearDown() :: Called after every test method"><span class="description">Called after every test method</span><pre>tearDown()</pre></a></li>
-<li class="method public "><a href="#method_testConstruct" title="testConstruct() :: Test for `__construct()` method"><span class="description">Test for `__construct()` method</span><pre>testConstruct()</pre></a></li>
 <li class="method public "><a href="#method_testExport" title="testExport() :: Test for `export()` method"><span class="description">Test for `export()` method</span><pre>testExport()</pre></a></li>
 <li class="method public "><a href="#method_testExportAndImport" title="testExportAndImport() :: Test for `export()` and `import()` methods."><span class="description">Test for `export()` and `import()` methods.</span><pre>testExportAndImport()</pre></a></li>
 <li class="method public "><a href="#method_testExportExecutable" title="testExportExecutable() :: Test for `_exportExecutable()` method"><span class="description">Test for `_exportExecutable()` method</span><pre>testExportExecutable()</pre></a></li>
 <li class="method public "><a href="#method_testExportExecutableWithCompression" title="testExportExecutableWithCompression() :: Test for `_exportExecutableWithCompression()` method"><span class="description">Test for `_exportExecutableWithCompression()` method</span><pre>testExportExecutableWithCompression()</pre></a></li>
-<li class="method public "><a href="#method_testExportOnFailure" title="testExportOnFailure() :: Test for `export()` method on failure"><span class="description">Test for `export()` method on failure</span><pre>testExportOnFailure()</pre></a></li>
-<li class="method public "><a href="#method_testExportStoppedByBeforeExport" title="testExportStoppedByBeforeExport() :: Test for `export()` method. Export is stopped because the
- `beforeExport()` method returns `false`"><span class="description">Test for `export()` method. Export is stopped because the
- `beforeExport()` method returns `false`</span><pre>testExportStoppedByBeforeExport()</pre></a></li>
-<li class="method public "><a href="#method_testGetConfig" title="testGetConfig() :: Test for `getConfig()` method"><span class="description">Test for `getConfig()` method</span><pre>testGetConfig()</pre></a></li>
 <li class="method public "><a href="#method_testImport" title="testImport() :: Test for `import()` method"><span class="description">Test for `import()` method</span><pre>testImport()</pre></a></li>
 <li class="method public "><a href="#method_testImportExecutable" title="testImportExecutable() :: Test for `_importExecutable()` method"><span class="description">Test for `_importExecutable()` method</span><pre>testImportExecutable()</pre></a></li>
 <li class="method public "><a href="#method_testImportExecutableWithCompression" title="testImportExecutableWithCompression() :: Test for `_importExecutableWithCompression()` method"><span class="description">Test for `_importExecutableWithCompression()` method</span><pre>testImportExecutableWithCompression()</pre></a></li>
-<li class="method public "><a href="#method_testImportOnFailure" title="testImportOnFailure() :: Test for `import()` method on failure"><span class="description">Test for `import()` method on failure</span><pre>testImportOnFailure()</pre></a></li>
-<li class="method public "><a href="#method_testImportStoppedByBeforeExport" title="testImportStoppedByBeforeExport() :: Test for `import()` method. Import is stopped because the
- `beforeImport()` method returns `false`"><span class="description">Test for `import()` method. Import is stopped because the
- `beforeImport()` method returns `false`</span><pre>testImportStoppedByBeforeExport()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header protected">» Protected
@@ -102,7 +92,7 @@
 <li class="method protected inherited"><a href="#method_createBackup" title="createBackup() :: Internal method to create a backup file"><span class="description">Internal method to create a backup file</span><pre>createBackup()</pre></a></li>
 <li class="method protected inherited"><a href="#method_createSomeBackups" title="createSomeBackups() :: Internal method to creates some backup files"><span class="description">Internal method to creates some backup files</span><pre>createSomeBackups()</pre></a></li>
 <li class="method protected "><a href="#method_getAllRecords" title="getAllRecords() :: Internal method to get all records from the database"><span class="description">Internal method to get all records from the database</span><pre>getAllRecords()</pre></a></li>
-<li class="method protected "><a href="#method_getMockForDriver" title="getMockForDriver() :: Internal method to mock a driver"><span class="description">Internal method to mock a driver</span><pre>getMockForDriver()</pre></a></li>
+<li class="method protected inherited"><a href="#method_getMockForDriver" title="getMockForDriver() :: Internal method to mock a driver"><span class="description">Internal method to mock a driver</span><pre>getMockForDriver()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -123,7 +113,7 @@
 </ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property_validExtensions" title="$validExtensions() :: Valid extensions (as keys) and compressions (as values)"><span class="description"></span><pre>$validExtensions</pre></a></li></ul>
+                    <ul><li class="property private "><a href="#property_validExtensions" title="$validExtensions() :: Valid extensions. Names as keys and compressions as values"><span class="description"></span><pre>$validExtensions</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -391,18 +381,6 @@
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_testConstruct"></a><div class="element clickable method public method_testConstruct " data-toggle="collapse" data-target=".method_testConstruct .collapse" title="public">
-<h2>Test for `__construct()` method</h2>
-<pre>testConstruct() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>test</th>
-<td></td>
-</tr></table>
-</div></div>
-</div>
 <a id="method_testExport"></a><div class="element clickable method public method_testExport " data-toggle="collapse" data-target=".method_testExport .collapse" title="public">
 <h2>Test for `export()` method</h2>
 <pre>testExport() : void</pre>
@@ -445,49 +423,6 @@
 </tr></table>
 </div></div>
 </div>
-<a id="method_testExportOnFailure"></a><div class="element clickable method public method_testExportOnFailure " data-toggle="collapse" data-target=".method_testExportOnFailure .collapse" title="public">
-<h2>Test for `export()` method on failure</h2>
-<pre>testExportOnFailure() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.6.2</td>
-</tr>
-<tr>
-<th>test</th>
-<td></td>
-</tr>
-</table>
-</div></div>
-</div>
-<a id="method_testExportStoppedByBeforeExport"></a><div class="element clickable method public method_testExportStoppedByBeforeExport " data-toggle="collapse" data-target=".method_testExportStoppedByBeforeExport .collapse" title="public">
-<h2>Test for `export()` method. Export is stopped because the
- `beforeExport()` method returns `false`</h2>
-<pre>testExportStoppedByBeforeExport() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>test</th>
-<td></td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_testGetConfig"></a><div class="element clickable method public method_testGetConfig " data-toggle="collapse" data-target=".method_testGetConfig .collapse" title="public">
-<h2>Test for `getConfig()` method</h2>
-<pre>testGetConfig() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>test</th>
-<td></td>
-</tr></table>
-</div></div>
-</div>
 <a id="method_testImport"></a><div class="element clickable method public method_testImport " data-toggle="collapse" data-target=".method_testImport .collapse" title="public">
 <h2>Test for `import()` method</h2>
 <pre>testImport() : void</pre>
@@ -509,37 +444,6 @@
 <a id="method_testImportExecutableWithCompression"></a><div class="element clickable method public method_testImportExecutableWithCompression " data-toggle="collapse" data-target=".method_testImportExecutableWithCompression .collapse" title="public">
 <h2>Test for `_importExecutableWithCompression()` method</h2>
 <pre>testImportExecutableWithCompression() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>test</th>
-<td></td>
-</tr></table>
-</div></div>
-</div>
-<a id="method_testImportOnFailure"></a><div class="element clickable method public method_testImportOnFailure " data-toggle="collapse" data-target=".method_testImportOnFailure .collapse" title="public">
-<h2>Test for `import()` method on failure</h2>
-<pre>testImportOnFailure() : void</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.6.2</td>
-</tr>
-<tr>
-<th>test</th>
-<td></td>
-</tr>
-</table>
-</div></div>
-</div>
-<a id="method_testImportStoppedByBeforeExport"></a><div class="element clickable method public method_testImportStoppedByBeforeExport " data-toggle="collapse" data-target=".method_testImportStoppedByBeforeExport .collapse" title="public">
-<h2>Test for `import()` method. Import is stopped because the
- `beforeImport()` method returns `false`</h2>
-<pre>testImportStoppedByBeforeExport() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -591,23 +495,16 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
-<a id="method_getMockForDriver"></a><div class="element clickable method protected method_getMockForDriver " data-toggle="collapse" data-target=".method_getMockForDriver .collapse" title="protected">
+<a id="method_getMockForDriver"></a><div class="element clickable method protected method_getMockForDriver inherited" data-toggle="collapse" data-target=".method_getMockForDriver .collapse" title="protected">
 <h2>Internal method to mock a driver</h2>
-<pre>getMockForDriver(array $methods) : \DatabaseBackup\Driver\Driver | \PHPUnit_Framework_MockObject_MockObject</pre>
-<div class="labels"></div>
+<pre>getMockForDriver(string $className, array $methods) : \DatabaseBackup\Driver\Driver | \PHPUnit_Framework_MockObject_MockObject</pre>
+<div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.6.1</td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.TestSuite.DriverTestCase.html#property_Driver">\DatabaseBackup\TestSuite\DriverTestCase::$Driver</a></td>
-</tr>
-</table>
 <h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>Driver class name</p></div>
 <div class="subelement argument">
 <h4>$methods</h4>
 <code>array</code><p>The list of methods to mock</p></div>
@@ -706,7 +603,7 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_validExtensions"> </a><div class="element clickable property private property_validExtensions" data-toggle="collapse" data-target=".property_validExtensions .collapse" title="private">
-<h2>Valid extensions (as keys) and compressions (as values)</h2>
+<h2>Valid extensions. Names as keys and compressions as values</h2>
 <pre>$validExtensions : array</pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
@@ -728,7 +625,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
-            generated on 2019-11-15T13:28:24+01:00.<br></footer></div>
+            generated on 2019-12-18T18:07:07+01:00.<br></footer></div>
 </div>
 </body>
 </html>

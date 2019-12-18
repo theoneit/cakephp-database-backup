@@ -144,7 +144,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -522,7 +522,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -813,7 +813,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="Command/ExportCommand.php" generated-path="Command.ExportCommand.html" hash="3124fef25646bef6a255b02a8de9a1ca" package="Default">
+  <file path="Command/ExportCommand.php" generated-path="Command.ExportCommand.html" hash="20b345871ea1babca3e241f4c9613d42" package="Default">
     <docblock line="0">
       <description>This file is part of cakephp-database-backup.</description>
       <long-description>Licensed under The MIT License
@@ -848,7 +848,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -1179,14 +1179,14 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="33" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="34" package="Default">
         <name>$connection</name>
         <full_name>\DatabaseBackup\Driver\Driver::$connection</full_name>
         <default></default>
-        <docblock line="33">
+        <docblock line="34">
           <description>A connection object</description>
           <long-description></long-description>
-          <tag name="var" line="33" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
+          <tag name="var" line="34" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
         </docblock>
@@ -1196,7 +1196,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -1335,16 +1335,16 @@ For security reasons, it's recommended to specify the password in
           <tag name="uses" line="155" description="" link="\DatabaseBackup\Driver\Mysql::$auth"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="40" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="41" package="Default">
         <name>__construct</name>
         <full_name>\DatabaseBackup\Driver\Driver::__construct()</full_name>
-        <docblock line="40">
+        <docblock line="41">
           <description>Construct</description>
           <long-description></long-description>
-          <tag name="param" line="40" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
+          <tag name="param" line="41" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
-          <tag name="uses" line="40" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="uses" line="41" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$connection</name>
@@ -1353,110 +1353,110 @@ For security reasons, it's recommended to specify the password in
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="57" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="58" package="Default">
         <name>implementedEvents</name>
         <full_name>\DatabaseBackup\Driver\Driver::implementedEvents()</full_name>
-        <docblock line="57">
+        <docblock line="58">
           <description>List of events this object is implementing. When the class is registered
  in an event manager, each individual method will be associated with the
  respective event</description>
           <long-description></long-description>
-          <tag name="return" line="57" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
+          <tag name="return" line="58" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
             <type>array</type>
           </tag>
-          <tag name="since" line="57" description="2.1.1"/>
+          <tag name="since" line="58" description="2.1.1"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="71" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="72" package="Default">
         <name>_exportExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutable()</full_name>
-        <docblock line="71">
+        <docblock line="72">
           <description>Gets the executable command to export the database</description>
           <long-description></long-description>
-          <tag name="return" line="71" description="" type="string">
+          <tag name="return" line="72" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="77" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="78" package="Default">
         <name>_importExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutable()</full_name>
-        <docblock line="77">
+        <docblock line="78">
           <description>Gets the executable command to import the database</description>
           <long-description></long-description>
-          <tag name="return" line="77" description="" type="string">
+          <tag name="return" line="78" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="84" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="85" package="Default">
         <name>afterExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterExport()</full_name>
-        <docblock line="84">
+        <docblock line="85">
           <description>Called after export</description>
           <long-description></long-description>
-          <tag name="return" line="84" description="" type="void">
+          <tag name="return" line="85" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="84" description="2.1.0"/>
+          <tag name="since" line="85" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="93" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="94" package="Default">
         <name>afterImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterImport()</full_name>
-        <docblock line="93">
+        <docblock line="94">
           <description>Called after import</description>
           <long-description></long-description>
-          <tag name="return" line="93" description="" type="void">
+          <tag name="return" line="94" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="93" description="2.1.0"/>
+          <tag name="since" line="94" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="102" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="103" package="Default">
         <name>beforeExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeExport()</full_name>
-        <docblock line="102">
+        <docblock line="103">
           <description>Called before export</description>
           <long-description></long-description>
-          <tag name="return" line="102" description="Returns `false` to stop the export" type="boolean">
+          <tag name="return" line="103" description="Returns `false` to stop the export" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="102" description="2.1.0"/>
+          <tag name="since" line="103" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="112" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="113" package="Default">
         <name>beforeImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeImport()</full_name>
-        <docblock line="112">
+        <docblock line="113">
           <description>Called before import</description>
           <long-description></long-description>
-          <tag name="return" line="112" description="Returns `false` to stop the import" type="boolean">
+          <tag name="return" line="113" description="Returns `false` to stop the import" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="112" description="2.1.0"/>
+          <tag name="since" line="113" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="123" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="124" package="Default">
         <name>_exportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()</full_name>
-        <docblock line="123">
+        <docblock line="124">
           <description>Gets the executable command to export the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="123" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="124" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="123" description="" type="string">
+          <tag name="return" line="124" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="123" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
+          <tag name="uses" line="124" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -1465,19 +1465,19 @@ For security reasons, it's recommended to specify the password in
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="146" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="147" package="Default">
         <name>_importExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()</full_name>
-        <docblock line="146">
+        <docblock line="147">
           <description>Gets the executable command to import the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="146" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="147" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="146" description="" type="string">
+          <tag name="return" line="147" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="146" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
+          <tag name="uses" line="147" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -1486,25 +1486,25 @@ For security reasons, it's recommended to specify the password in
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="175" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="176" package="Default">
         <name>export</name>
         <full_name>\DatabaseBackup\Driver\Driver::export()</full_name>
-        <docblock line="175">
+        <docblock line="176">
           <description>Exports the database.</description>
           <long-description>When exporting, this method will trigger these events:
 
 - Backup.beforeExport: will be triggered before export
 - Backup.afterExport: will be triggered after export</long-description>
-          <tag name="param" line="175" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="176" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="175" description="true on success" type="boolean">
+          <tag name="return" line="176" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="175" description="" type="\Exception">
+          <tag name="throws" line="176" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="175" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
+          <tag name="uses" line="176" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -1513,23 +1513,23 @@ For security reasons, it's recommended to specify the password in
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="199" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="200" package="Default">
         <name>getConfig</name>
         <full_name>\DatabaseBackup\Driver\Driver::getConfig()</full_name>
-        <docblock line="199">
+        <docblock line="200">
           <description>Gets a config value or the whole configuration</description>
           <long-description></long-description>
-          <tag name="param" line="199" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
+          <tag name="param" line="200" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="199" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
+          <tag name="return" line="200" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
             <type>array</type>
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="since" line="199" description="2.3.0"/>
-          <tag name="uses" line="199" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="since" line="200" description="2.3.0"/>
+          <tag name="uses" line="200" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$key</name>
@@ -1538,25 +1538,25 @@ For security reasons, it's recommended to specify the password in
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="218" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="219" package="Default">
         <name>import</name>
         <full_name>\DatabaseBackup\Driver\Driver::import()</full_name>
-        <docblock line="218">
+        <docblock line="219">
           <description>Imports the database.</description>
           <long-description>When importing, this method will trigger these events:
 
 - Backup.beforeImport: will be triggered before import
 - Backup.afterImport: will be triggered after import</long-description>
-          <tag name="param" line="218" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="219" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="218" description="true on success" type="boolean">
+          <tag name="return" line="219" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="218" description="" type="\Exception">
+          <tag name="throws" line="219" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="218" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
+          <tag name="uses" line="219" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -1792,14 +1792,14 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <tag name="package" line="21" description="Default"/>
         <tag name="inherited_from" description="\DatabaseBackup\Driver\Driver" refers="\DatabaseBackup\Driver\Driver" link="/classes/DatabaseBackup.Driver.Driver.html"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="33" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="34" package="Default">
         <name>$connection</name>
         <full_name>\DatabaseBackup\Driver\Driver::$connection</full_name>
         <default></default>
-        <docblock line="33">
+        <docblock line="34">
           <description>A connection object</description>
           <long-description></long-description>
-          <tag name="var" line="33" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
+          <tag name="var" line="34" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
         </docblock>
@@ -1809,7 +1809,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -1860,16 +1860,16 @@ postgresql://postgres@localhost/travis_ci_test
           <tag name="inherited_from" description="\DatabaseBackup\Driver\Driver::_importExecutable()" refers="\DatabaseBackup\Driver\Driver::_importExecutable()" link="/classes/DatabaseBackup.Driver.Driver.html#method__importExecutable"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="40" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="41" package="Default">
         <name>__construct</name>
         <full_name>\DatabaseBackup\Driver\Driver::__construct()</full_name>
-        <docblock line="40">
+        <docblock line="41">
           <description>Construct</description>
           <long-description></long-description>
-          <tag name="param" line="40" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
+          <tag name="param" line="41" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
-          <tag name="uses" line="40" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="uses" line="41" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$connection</name>
@@ -1878,110 +1878,110 @@ postgresql://postgres@localhost/travis_ci_test
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="57" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="58" package="Default">
         <name>implementedEvents</name>
         <full_name>\DatabaseBackup\Driver\Driver::implementedEvents()</full_name>
-        <docblock line="57">
+        <docblock line="58">
           <description>List of events this object is implementing. When the class is registered
  in an event manager, each individual method will be associated with the
  respective event</description>
           <long-description></long-description>
-          <tag name="return" line="57" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
+          <tag name="return" line="58" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
             <type>array</type>
           </tag>
-          <tag name="since" line="57" description="2.1.1"/>
+          <tag name="since" line="58" description="2.1.1"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="71" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="72" package="Default">
         <name>_exportExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutable()</full_name>
-        <docblock line="71">
+        <docblock line="72">
           <description>Gets the executable command to export the database</description>
           <long-description></long-description>
-          <tag name="return" line="71" description="" type="string">
+          <tag name="return" line="72" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="77" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="78" package="Default">
         <name>_importExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutable()</full_name>
-        <docblock line="77">
+        <docblock line="78">
           <description>Gets the executable command to import the database</description>
           <long-description></long-description>
-          <tag name="return" line="77" description="" type="string">
+          <tag name="return" line="78" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="84" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="85" package="Default">
         <name>afterExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterExport()</full_name>
-        <docblock line="84">
+        <docblock line="85">
           <description>Called after export</description>
           <long-description></long-description>
-          <tag name="return" line="84" description="" type="void">
+          <tag name="return" line="85" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="84" description="2.1.0"/>
+          <tag name="since" line="85" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="93" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="94" package="Default">
         <name>afterImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterImport()</full_name>
-        <docblock line="93">
+        <docblock line="94">
           <description>Called after import</description>
           <long-description></long-description>
-          <tag name="return" line="93" description="" type="void">
+          <tag name="return" line="94" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="93" description="2.1.0"/>
+          <tag name="since" line="94" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="102" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="103" package="Default">
         <name>beforeExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeExport()</full_name>
-        <docblock line="102">
+        <docblock line="103">
           <description>Called before export</description>
           <long-description></long-description>
-          <tag name="return" line="102" description="Returns `false` to stop the export" type="boolean">
+          <tag name="return" line="103" description="Returns `false` to stop the export" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="102" description="2.1.0"/>
+          <tag name="since" line="103" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="112" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="113" package="Default">
         <name>beforeImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeImport()</full_name>
-        <docblock line="112">
+        <docblock line="113">
           <description>Called before import</description>
           <long-description></long-description>
-          <tag name="return" line="112" description="Returns `false` to stop the import" type="boolean">
+          <tag name="return" line="113" description="Returns `false` to stop the import" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="112" description="2.1.0"/>
+          <tag name="since" line="113" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="123" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="124" package="Default">
         <name>_exportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()</full_name>
-        <docblock line="123">
+        <docblock line="124">
           <description>Gets the executable command to export the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="123" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="124" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="123" description="" type="string">
+          <tag name="return" line="124" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="123" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
+          <tag name="uses" line="124" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -1990,19 +1990,19 @@ postgresql://postgres@localhost/travis_ci_test
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="146" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="147" package="Default">
         <name>_importExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()</full_name>
-        <docblock line="146">
+        <docblock line="147">
           <description>Gets the executable command to import the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="146" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="147" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="146" description="" type="string">
+          <tag name="return" line="147" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="146" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
+          <tag name="uses" line="147" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2011,25 +2011,25 @@ postgresql://postgres@localhost/travis_ci_test
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="175" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="176" package="Default">
         <name>export</name>
         <full_name>\DatabaseBackup\Driver\Driver::export()</full_name>
-        <docblock line="175">
+        <docblock line="176">
           <description>Exports the database.</description>
           <long-description>When exporting, this method will trigger these events:
 
 - Backup.beforeExport: will be triggered before export
 - Backup.afterExport: will be triggered after export</long-description>
-          <tag name="param" line="175" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="176" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="175" description="true on success" type="boolean">
+          <tag name="return" line="176" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="175" description="" type="\Exception">
+          <tag name="throws" line="176" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="175" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
+          <tag name="uses" line="176" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2038,23 +2038,23 @@ postgresql://postgres@localhost/travis_ci_test
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="199" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="200" package="Default">
         <name>getConfig</name>
         <full_name>\DatabaseBackup\Driver\Driver::getConfig()</full_name>
-        <docblock line="199">
+        <docblock line="200">
           <description>Gets a config value or the whole configuration</description>
           <long-description></long-description>
-          <tag name="param" line="199" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
+          <tag name="param" line="200" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="199" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
+          <tag name="return" line="200" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
             <type>array</type>
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="since" line="199" description="2.3.0"/>
-          <tag name="uses" line="199" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="since" line="200" description="2.3.0"/>
+          <tag name="uses" line="200" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$key</name>
@@ -2063,25 +2063,25 @@ postgresql://postgres@localhost/travis_ci_test
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="218" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="219" package="Default">
         <name>import</name>
         <full_name>\DatabaseBackup\Driver\Driver::import()</full_name>
-        <docblock line="218">
+        <docblock line="219">
           <description>Imports the database.</description>
           <long-description>When importing, this method will trigger these events:
 
 - Backup.beforeImport: will be triggered before import
 - Backup.afterImport: will be triggered after import</long-description>
-          <tag name="param" line="218" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="219" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="218" description="true on success" type="boolean">
+          <tag name="return" line="219" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="218" description="" type="\Exception">
+          <tag name="throws" line="219" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="218" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
+          <tag name="uses" line="219" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2348,7 +2348,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -2636,14 +2636,14 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <tag name="package" line="21" description="Default"/>
         <tag name="inherited_from" description="\DatabaseBackup\Driver\Driver" refers="\DatabaseBackup\Driver\Driver" link="/classes/DatabaseBackup.Driver.Driver.html"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="33" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="34" package="Default">
         <name>$connection</name>
         <full_name>\DatabaseBackup\Driver\Driver::$connection</full_name>
         <default></default>
-        <docblock line="33">
+        <docblock line="34">
           <description>A connection object</description>
           <long-description></long-description>
-          <tag name="var" line="33" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
+          <tag name="var" line="34" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
         </docblock>
@@ -2653,7 +2653,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -2701,16 +2701,16 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <tag name="inherited_from" description="\DatabaseBackup\Driver\Driver::beforeImport()" refers="\DatabaseBackup\Driver\Driver::beforeImport()" link="/classes/DatabaseBackup.Driver.Driver.html#method_beforeImport"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="40" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="41" package="Default">
         <name>__construct</name>
         <full_name>\DatabaseBackup\Driver\Driver::__construct()</full_name>
-        <docblock line="40">
+        <docblock line="41">
           <description>Construct</description>
           <long-description></long-description>
-          <tag name="param" line="40" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
+          <tag name="param" line="41" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
-          <tag name="uses" line="40" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="uses" line="41" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$connection</name>
@@ -2719,110 +2719,110 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="57" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="58" package="Default">
         <name>implementedEvents</name>
         <full_name>\DatabaseBackup\Driver\Driver::implementedEvents()</full_name>
-        <docblock line="57">
+        <docblock line="58">
           <description>List of events this object is implementing. When the class is registered
  in an event manager, each individual method will be associated with the
  respective event</description>
           <long-description></long-description>
-          <tag name="return" line="57" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
+          <tag name="return" line="58" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
             <type>array</type>
           </tag>
-          <tag name="since" line="57" description="2.1.1"/>
+          <tag name="since" line="58" description="2.1.1"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="71" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="72" package="Default">
         <name>_exportExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutable()</full_name>
-        <docblock line="71">
+        <docblock line="72">
           <description>Gets the executable command to export the database</description>
           <long-description></long-description>
-          <tag name="return" line="71" description="" type="string">
+          <tag name="return" line="72" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="77" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="78" package="Default">
         <name>_importExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutable()</full_name>
-        <docblock line="77">
+        <docblock line="78">
           <description>Gets the executable command to import the database</description>
           <long-description></long-description>
-          <tag name="return" line="77" description="" type="string">
+          <tag name="return" line="78" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="84" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="85" package="Default">
         <name>afterExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterExport()</full_name>
-        <docblock line="84">
+        <docblock line="85">
           <description>Called after export</description>
           <long-description></long-description>
-          <tag name="return" line="84" description="" type="void">
+          <tag name="return" line="85" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="84" description="2.1.0"/>
+          <tag name="since" line="85" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="93" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="94" package="Default">
         <name>afterImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterImport()</full_name>
-        <docblock line="93">
+        <docblock line="94">
           <description>Called after import</description>
           <long-description></long-description>
-          <tag name="return" line="93" description="" type="void">
+          <tag name="return" line="94" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="93" description="2.1.0"/>
+          <tag name="since" line="94" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="102" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="103" package="Default">
         <name>beforeExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeExport()</full_name>
-        <docblock line="102">
+        <docblock line="103">
           <description>Called before export</description>
           <long-description></long-description>
-          <tag name="return" line="102" description="Returns `false` to stop the export" type="boolean">
+          <tag name="return" line="103" description="Returns `false` to stop the export" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="102" description="2.1.0"/>
+          <tag name="since" line="103" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="112" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="113" package="Default">
         <name>beforeImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeImport()</full_name>
-        <docblock line="112">
+        <docblock line="113">
           <description>Called before import</description>
           <long-description></long-description>
-          <tag name="return" line="112" description="Returns `false` to stop the import" type="boolean">
+          <tag name="return" line="113" description="Returns `false` to stop the import" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="112" description="2.1.0"/>
+          <tag name="since" line="113" description="2.1.0"/>
         </docblock>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="123" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="124" package="Default">
         <name>_exportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()</full_name>
-        <docblock line="123">
+        <docblock line="124">
           <description>Gets the executable command to export the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="123" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="124" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="123" description="" type="string">
+          <tag name="return" line="124" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="123" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
+          <tag name="uses" line="124" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2831,19 +2831,19 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="146" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="147" package="Default">
         <name>_importExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()</full_name>
-        <docblock line="146">
+        <docblock line="147">
           <description>Gets the executable command to import the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="146" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="147" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="146" description="" type="string">
+          <tag name="return" line="147" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="146" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
+          <tag name="uses" line="147" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2852,25 +2852,25 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="175" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="176" package="Default">
         <name>export</name>
         <full_name>\DatabaseBackup\Driver\Driver::export()</full_name>
-        <docblock line="175">
+        <docblock line="176">
           <description>Exports the database.</description>
           <long-description>When exporting, this method will trigger these events:
 
 - Backup.beforeExport: will be triggered before export
 - Backup.afterExport: will be triggered after export</long-description>
-          <tag name="param" line="175" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="176" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="175" description="true on success" type="boolean">
+          <tag name="return" line="176" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="175" description="" type="\Exception">
+          <tag name="throws" line="176" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="175" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
+          <tag name="uses" line="176" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -2879,23 +2879,23 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="199" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="200" package="Default">
         <name>getConfig</name>
         <full_name>\DatabaseBackup\Driver\Driver::getConfig()</full_name>
-        <docblock line="199">
+        <docblock line="200">
           <description>Gets a config value or the whole configuration</description>
           <long-description></long-description>
-          <tag name="param" line="199" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
+          <tag name="param" line="200" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="199" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
+          <tag name="return" line="200" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
             <type>array</type>
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="since" line="199" description="2.3.0"/>
-          <tag name="uses" line="199" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="since" line="200" description="2.3.0"/>
+          <tag name="uses" line="200" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$key</name>
@@ -2904,25 +2904,25 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         </argument>
         <inherited_from>\DatabaseBackup\Driver\Driver</inherited_from>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="218" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="219" package="Default">
         <name>import</name>
         <full_name>\DatabaseBackup\Driver\Driver::import()</full_name>
-        <docblock line="218">
+        <docblock line="219">
           <description>Imports the database.</description>
           <long-description>When importing, this method will trigger these events:
 
 - Backup.beforeImport: will be triggered before import
 - Backup.afterImport: will be triggered after import</long-description>
-          <tag name="param" line="218" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="219" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="218" description="true on success" type="boolean">
+          <tag name="return" line="219" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="218" description="" type="\Exception">
+          <tag name="throws" line="219" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="218" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
+          <tag name="uses" line="219" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -3135,7 +3135,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="TestSuite/TestCase.php" generated-path="TestSuite.TestCase.html" hash="c03ab59d691efe088834027ffb81182c" package="Default">
+  <file path="TestSuite/TestCase.php" generated-path="TestSuite.TestCase.html" hash="6ae996147b449664582864a69f1ee4d7" package="Default">
     <docblock line="0">
       <description>This file is part of cakephp-database-backup.</description>
       <long-description>Licensed under The MIT License
@@ -3177,7 +3177,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -3244,6 +3244,34 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <name>$sleep</name>
           <default>false</default>
           <type>boolean</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="92" package="Default">
+        <name>getMockForDriver</name>
+        <full_name>\DatabaseBackup\TestSuite\TestCase::getMockForDriver()</full_name>
+        <docblock line="92">
+          <description>Internal method to mock a driver</description>
+          <long-description></long-description>
+          <tag name="param" line="92" description="&lt;p&gt;Driver class name&lt;/p&gt;" type="string" variable="$className">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;The list of methods to mock&lt;/p&gt;" type="array" variable="$methods">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="92" description="" type="\DatabaseBackup\Driver\Driver|\PHPUnit_Framework_MockObject_MockObject">
+            <type>\DatabaseBackup\Driver\Driver</type>
+            <type>\PHPUnit_Framework_MockObject_MockObject</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$className</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$methods</name>
+          <default></default>
+          <type>array</type>
         </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="41" package="Default">
@@ -3450,7 +3478,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="BackupTrait.php" generated-path="BackupTrait.html" hash="d0d1d8c93f01563031c85d7987c7e0ba" package="Default">
+  <file path="BackupTrait.php" generated-path="BackupTrait.html" hash="d01c28f2fb4fcfbade54a62aa9aed45c" package="Default">
     <docblock line="0">
       <description>This file is part of cakephp-database-backup.</description>
       <long-description>Licensed under The MIT License
@@ -3481,7 +3509,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -3716,7 +3744,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -4041,7 +4069,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -4423,7 +4451,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -4764,7 +4792,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="Driver/Driver.php" generated-path="Driver.Driver.html" hash="a175101f03370b5eb4a72965c8a7f52c" package="Default">
+  <file path="Driver/Driver.php" generated-path="Driver.Driver.html" hash="e3cf0f341680934dd994d7f6caa4edf5" package="Default">
     <docblock line="0">
       <description>This file is part of cakephp-database-backup.</description>
       <long-description>Licensed under The MIT License
@@ -4791,14 +4819,14 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <long-description></long-description>
         <tag name="package" line="25" description="Default"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="33" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="34" package="Default">
         <name>$connection</name>
         <full_name>\DatabaseBackup\Driver\Driver::$connection</full_name>
         <default></default>
-        <docblock line="33">
+        <docblock line="34">
           <description>A connection object</description>
           <long-description></long-description>
-          <tag name="var" line="33" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
+          <tag name="var" line="34" description="" type="\Cake\Datasource\ConnectionInterface" variable="">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
         </docblock>
@@ -4808,7 +4836,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -4816,16 +4844,16 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="40" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="41" package="Default">
         <name>__construct</name>
         <full_name>\DatabaseBackup\Driver\Driver::__construct()</full_name>
-        <docblock line="40">
+        <docblock line="41">
           <description>Construct</description>
           <long-description></long-description>
-          <tag name="param" line="40" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
+          <tag name="param" line="41" description="&lt;p&gt;A connection object&lt;/p&gt;" type="\Cake\Datasource\ConnectionInterface" variable="$connection">
             <type>\Cake\Datasource\ConnectionInterface</type>
           </tag>
-          <tag name="uses" line="40" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="uses" line="41" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$connection</name>
@@ -4833,103 +4861,103 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>\Cake\Datasource\ConnectionInterface</type>
         </argument>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="57" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="58" package="Default">
         <name>implementedEvents</name>
         <full_name>\DatabaseBackup\Driver\Driver::implementedEvents()</full_name>
-        <docblock line="57">
+        <docblock line="58">
           <description>List of events this object is implementing. When the class is registered
  in an event manager, each individual method will be associated with the
  respective event</description>
           <long-description></long-description>
-          <tag name="return" line="57" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
+          <tag name="return" line="58" description="Associative array or event key names pointing to the&#10; function that should be called in the object when the respective event&#10; is fired" type="array">
             <type>array</type>
           </tag>
-          <tag name="since" line="57" description="2.1.1"/>
+          <tag name="since" line="58" description="2.1.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="71" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="72" package="Default">
         <name>_exportExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutable()</full_name>
-        <docblock line="71">
+        <docblock line="72">
           <description>Gets the executable command to export the database</description>
           <long-description></long-description>
-          <tag name="return" line="71" description="" type="string">
+          <tag name="return" line="72" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="77" package="Default">
+      <method final="false" abstract="true" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="78" package="Default">
         <name>_importExecutable</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutable()</full_name>
-        <docblock line="77">
+        <docblock line="78">
           <description>Gets the executable command to import the database</description>
           <long-description></long-description>
-          <tag name="return" line="77" description="" type="string">
+          <tag name="return" line="78" description="" type="string">
             <type>string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="84" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="85" package="Default">
         <name>afterExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterExport()</full_name>
-        <docblock line="84">
+        <docblock line="85">
           <description>Called after export</description>
           <long-description></long-description>
-          <tag name="return" line="84" description="" type="void">
+          <tag name="return" line="85" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="84" description="2.1.0"/>
+          <tag name="since" line="85" description="2.1.0"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="93" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="94" package="Default">
         <name>afterImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::afterImport()</full_name>
-        <docblock line="93">
+        <docblock line="94">
           <description>Called after import</description>
           <long-description></long-description>
-          <tag name="return" line="93" description="" type="void">
+          <tag name="return" line="94" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="since" line="93" description="2.1.0"/>
+          <tag name="since" line="94" description="2.1.0"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="102" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="103" package="Default">
         <name>beforeExport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeExport()</full_name>
-        <docblock line="102">
+        <docblock line="103">
           <description>Called before export</description>
           <long-description></long-description>
-          <tag name="return" line="102" description="Returns `false` to stop the export" type="boolean">
+          <tag name="return" line="103" description="Returns `false` to stop the export" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="102" description="2.1.0"/>
+          <tag name="since" line="103" description="2.1.0"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="112" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="113" package="Default">
         <name>beforeImport</name>
         <full_name>\DatabaseBackup\Driver\Driver::beforeImport()</full_name>
-        <docblock line="112">
+        <docblock line="113">
           <description>Called before import</description>
           <long-description></long-description>
-          <tag name="return" line="112" description="Returns `false` to stop the import" type="boolean">
+          <tag name="return" line="113" description="Returns `false` to stop the import" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="since" line="112" description="2.1.0"/>
+          <tag name="since" line="113" description="2.1.0"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="123" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="124" package="Default">
         <name>_exportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()</full_name>
-        <docblock line="123">
+        <docblock line="124">
           <description>Gets the executable command to export the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="123" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="124" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="123" description="" type="string">
+          <tag name="return" line="124" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="123" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
+          <tag name="uses" line="124" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -4937,19 +4965,19 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>string</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="146" package="Default">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\Driver" line="147" package="Default">
         <name>_importExecutableWithCompression</name>
         <full_name>\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()</full_name>
-        <docblock line="146">
+        <docblock line="147">
           <description>Gets the executable command to import the database, with compression</description>
           <long-description></long-description>
-          <tag name="param" line="146" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="147" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="146" description="" type="string">
+          <tag name="return" line="147" description="" type="string">
             <type>string</type>
           </tag>
-          <tag name="uses" line="146" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
+          <tag name="uses" line="147" description="" link="\DatabaseBackup\Driver\Driver::_importExecutable()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -4957,25 +4985,25 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>string</type>
         </argument>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="175" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="176" package="Default">
         <name>export</name>
         <full_name>\DatabaseBackup\Driver\Driver::export()</full_name>
-        <docblock line="175">
+        <docblock line="176">
           <description>Exports the database.</description>
           <long-description>When exporting, this method will trigger these events:
 
 - Backup.beforeExport: will be triggered before export
 - Backup.afterExport: will be triggered after export</long-description>
-          <tag name="param" line="175" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="176" description="&lt;p&gt;Filename where you want to export the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="175" description="true on success" type="boolean">
+          <tag name="return" line="176" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="175" description="" type="\Exception">
+          <tag name="throws" line="176" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="175" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
+          <tag name="uses" line="176" description="" link="\DatabaseBackup\Driver\Driver::_exportExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -4983,23 +5011,23 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>string</type>
         </argument>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="199" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="200" package="Default">
         <name>getConfig</name>
         <full_name>\DatabaseBackup\Driver\Driver::getConfig()</full_name>
-        <docblock line="199">
+        <docblock line="200">
           <description>Gets a config value or the whole configuration</description>
           <long-description></long-description>
-          <tag name="param" line="199" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
+          <tag name="param" line="200" description="&lt;p&gt;Config key or &lt;code&gt;null&lt;/code&gt; to get all config values&lt;/p&gt;" type="string|null" variable="$key">
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="return" line="199" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
+          <tag name="return" line="200" description="Config value, `null` if the key doesn't exist&#10; or all config values if no key was specified" type="array|string|null">
             <type>array</type>
             <type>string</type>
             <type>null</type>
           </tag>
-          <tag name="since" line="199" description="2.3.0"/>
-          <tag name="uses" line="199" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
+          <tag name="since" line="200" description="2.3.0"/>
+          <tag name="uses" line="200" description="" link="\DatabaseBackup\Driver\Driver::$connection"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$key</name>
@@ -5007,25 +5035,25 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <type>string|null</type>
         </argument>
       </method>
-      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="218" package="Default">
+      <method final="true" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\Driver" line="219" package="Default">
         <name>import</name>
         <full_name>\DatabaseBackup\Driver\Driver::import()</full_name>
-        <docblock line="218">
+        <docblock line="219">
           <description>Imports the database.</description>
           <long-description>When importing, this method will trigger these events:
 
 - Backup.beforeImport: will be triggered before import
 - Backup.afterImport: will be triggered after import</long-description>
-          <tag name="param" line="218" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
+          <tag name="param" line="219" description="&lt;p&gt;Filename from which you want to import the database&lt;/p&gt;" type="string" variable="$filename">
             <type>string</type>
           </tag>
-          <tag name="return" line="218" description="true on success" type="boolean">
+          <tag name="return" line="219" description="true on success" type="boolean">
             <type>boolean</type>
           </tag>
-          <tag name="throws" line="218" description="" type="\Exception">
+          <tag name="throws" line="219" description="" type="\Exception">
             <type>\Exception</type>
           </tag>
-          <tag name="uses" line="218" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
+          <tag name="uses" line="219" description="" link="\DatabaseBackup\Driver\Driver::_importExecutableWithCompression()"/>
         </docblock>
         <argument line="0" by_reference="false">
           <name>$filename</name>
@@ -5271,7 +5299,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -5595,7 +5623,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -5887,7 +5915,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       </method>
     </class>
   </file>
-  <file path="TestSuite/DriverTestCase.php" generated-path="TestSuite.DriverTestCase.html" hash="538b51fe183fec2558168634f1977de1" package="Default">
+  <file path="TestSuite/DriverTestCase.php" generated-path="TestSuite.DriverTestCase.html" hash="8e842ac83b3db19b2a21761d5690a9cc" package="Default">
     <docblock line="0">
       <description>This file is part of cakephp-database-backup.</description>
       <long-description>Licensed under The MIT License
@@ -5900,101 +5928,99 @@ Redistributions of files must retain the above copyright notice.</long-descripti
       <tag name="package" line="0" description="Default"/>
     </docblock>
     <namespace-alias name="Configure">\Cake\Core\Configure</namespace-alias>
-    <namespace-alias name="Connection">\Cake\Database\Connection</namespace-alias>
     <namespace-alias name="EventList">\Cake\Event\EventList</namespace-alias>
     <namespace-alias name="TestCase">\DatabaseBackup\TestSuite\TestCase</namespace-alias>
-    <namespace-alias name="ErrorException">\ErrorException</namespace-alias>
-    <class final="false" abstract="true" namespace="DatabaseBackup\TestSuite" line="27" package="Default">
+    <class final="false" abstract="true" namespace="DatabaseBackup\TestSuite" line="25" package="Default">
       <extends>\DatabaseBackup\TestSuite\TestCase</extends>
       <name>DriverTestCase</name>
       <full_name>\DatabaseBackup\TestSuite\DriverTestCase</full_name>
-      <docblock line="27">
+      <docblock line="25">
         <description>DriverTestCase class.</description>
         <long-description>Classes with tests for driver must extend this class.</long-description>
-        <tag name="package" line="27" description="Default"/>
+        <tag name="package" line="25" description="Default"/>
         <tag name="inherited_from" description="\DatabaseBackup\TestSuite\TestCase" refers="\DatabaseBackup\TestSuite\TestCase" link="/classes/DatabaseBackup.TestSuite.TestCase.html"/>
       </docblock>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="33" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="31" package="Default">
         <name>$Articles</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$Articles</full_name>
         <default></default>
-        <docblock line="33">
+        <docblock line="31">
           <description>`Articles` table</description>
           <long-description></long-description>
-          <tag name="var" line="33" description="" type="\Cake\ORM\Table" variable="">
+          <tag name="var" line="31" description="" type="\Cake\ORM\Table" variable="">
             <type>\Cake\ORM\Table</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="39" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="37" package="Default">
         <name>$Comments</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$Comments</full_name>
         <default></default>
-        <docblock line="39">
+        <docblock line="37">
           <description>`Comments` table</description>
           <long-description></long-description>
-          <tag name="var" line="39" description="" type="\Cake\ORM\Table" variable="">
+          <tag name="var" line="37" description="" type="\Cake\ORM\Table" variable="">
             <type>\Cake\ORM\Table</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="45" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="43" package="Default">
         <name>$Driver</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$Driver</full_name>
         <default></default>
-        <docblock line="45">
+        <docblock line="43">
           <description>`Driver` instance</description>
           <long-description></long-description>
-          <tag name="var" line="45" description="" type="\DatabaseBackup\Driver\Driver" variable="">
+          <tag name="var" line="43" description="" type="\DatabaseBackup\Driver\Driver" variable="">
             <type>\DatabaseBackup\Driver\Driver</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="52" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="50" package="Default">
         <name>$DriverClass</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$DriverClass</full_name>
         <default></default>
-        <docblock line="52">
+        <docblock line="50">
           <description>Driver class</description>
           <long-description></long-description>
-          <tag name="since" line="52" description="2.5.1"/>
-          <tag name="var" line="52" description="" type="string" variable="">
+          <tag name="since" line="50" description="2.5.1"/>
+          <tag name="var" line="50" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="58" package="Default">
+      <property static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="56" package="Default">
         <name>$autoFixtures</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$autoFixtures</full_name>
         <default>false</default>
-        <docblock line="58">
+        <docblock line="56">
           <description>Auto fixtures</description>
           <long-description></long-description>
-          <tag name="var" line="58" description="" type="boolean" variable="">
+          <tag name="var" line="56" description="" type="boolean" variable="">
             <type>boolean</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="64" package="Default">
+      <property static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="62" package="Default">
         <name>$connection</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$connection</full_name>
         <default></default>
-        <docblock line="64">
+        <docblock line="62">
           <description>Name of the database connection</description>
           <long-description></long-description>
-          <tag name="var" line="64" description="" type="string" variable="">
+          <tag name="var" line="62" description="" type="string" variable="">
             <type>string</type>
           </tag>
         </docblock>
       </property>
-      <property static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="70" package="Default">
+      <property static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="68" package="Default">
         <name>$fixtures</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::$fixtures</full_name>
         <default></default>
-        <docblock line="70">
+        <docblock line="68">
           <description>Fixtures</description>
           <long-description></long-description>
-          <tag name="var" line="70" description="" type="array" variable="">
+          <tag name="var" line="68" description="" type="array" variable="">
             <type>array</type>
           </tag>
         </docblock>
@@ -6016,7 +6042,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">
@@ -6024,207 +6050,109 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="76" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="74" package="Default">
         <name>setUp</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::setUp()</full_name>
-        <docblock line="76">
+        <docblock line="74">
           <description>Called before every test method</description>
           <long-description></long-description>
-          <tag name="return" line="76" description="" type="void">
+          <tag name="return" line="74" description="" type="void">
             <type>void</type>
           </tag>
           <tag name="inherited_from" description="\DatabaseBackup\TestSuite\TestCase::setUp()" refers="\DatabaseBackup\TestSuite\TestCase::setUp()" link="/classes/DatabaseBackup.TestSuite.TestCase.html#method_setUp"/>
         </docblock>
       </method>
-      <method final="true" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="94" package="Default">
+      <method final="true" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="92" package="Default">
         <name>getAllRecords</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::getAllRecords()</full_name>
-        <docblock line="94">
+        <docblock line="92">
           <description>Internal method to get all records from the database</description>
           <long-description></long-description>
-          <tag name="return" line="94" description="" type="array">
+          <tag name="return" line="92" description="" type="array">
             <type>array</type>
           </tag>
         </docblock>
       </method>
-      <method final="true" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="110" package="Default">
-        <name>getMockForDriver</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::getMockForDriver()</full_name>
-        <docblock line="110">
-          <description>Internal method to mock a driver</description>
-          <long-description></long-description>
-          <tag name="param" line="110" description="&lt;p&gt;The list of methods to mock&lt;/p&gt;" type="array" variable="$methods">
-            <type>array</type>
-          </tag>
-          <tag name="return" line="110" description="" type="\DatabaseBackup\Driver\Driver|\PHPUnit_Framework_MockObject_MockObject">
-            <type>\DatabaseBackup\Driver\Driver</type>
-            <type>\PHPUnit_Framework_MockObject_MockObject</type>
-          </tag>
-          <tag name="since" line="110" description="2.6.1"/>
-          <tag name="uses" line="110" description="" link="\DatabaseBackup\TestSuite\DriverTestCase::$Driver"/>
-        </docblock>
-        <argument line="0" by_reference="false">
-          <name>$methods</name>
-          <default></default>
-          <type>array</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="123" package="Default">
-        <name>testConstruct</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testConstruct()</full_name>
-        <docblock line="123">
-          <description>Test for `__construct()` method</description>
-          <long-description></long-description>
-          <tag name="return" line="123" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="test" line="123" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="133" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="106" package="Default">
         <name>testExport</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExport()</full_name>
-        <docblock line="133">
+        <docblock line="106">
           <description>Test for `export()` method</description>
           <long-description></long-description>
-          <tag name="return" line="133" description="" type="void">
+          <tag name="return" line="106" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="test" line="133" description=""/>
+          <tag name="test" line="106" description=""/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="149" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="122" package="Default">
         <name>testExportAndImport</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExportAndImport()</full_name>
-        <docblock line="149">
+        <docblock line="122">
           <description>Test for `export()` and `import()` methods.</description>
           <long-description>It tests that the backup is properly exported and then imported.</long-description>
-          <tag name="return" line="149" description="" type="void">
+          <tag name="return" line="122" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="test" line="149" description=""/>
+          <tag name="test" line="122" description=""/>
         </docblock>
       </method>
-      <method final="false" abstract="true" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="200" package="Default">
+      <method final="false" abstract="true" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="173" package="Default">
         <name>testExportExecutable</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExportExecutable()</full_name>
-        <docblock line="200">
+        <docblock line="173">
           <description>Test for `_exportExecutable()` method</description>
           <long-description></long-description>
-          <tag name="return" line="200" description="" type="void">
+          <tag name="return" line="173" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="207" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="180" package="Default">
         <name>testExportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExportExecutableWithCompression()</full_name>
-        <docblock line="207">
+        <docblock line="180">
           <description>Test for `_exportExecutableWithCompression()` method</description>
           <long-description></long-description>
-          <tag name="return" line="207" description="" type="void">
+          <tag name="return" line="180" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="test" line="207" description=""/>
+          <tag name="test" line="180" description=""/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="236" package="Default">
-        <name>testExportOnFailure</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExportOnFailure()</full_name>
-        <docblock line="236">
-          <description>Test for `export()` method on failure</description>
-          <long-description></long-description>
-          <tag name="return" line="236" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="since" line="236" description="2.6.2"/>
-          <tag name="test" line="236" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="252" package="Default">
-        <name>testExportStoppedByBeforeExport</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testExportStoppedByBeforeExport()</full_name>
-        <docblock line="252">
-          <description>Test for `export()` method. Export is stopped because the
- `beforeExport()` method returns `false`</description>
-          <long-description></long-description>
-          <tag name="return" line="252" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="test" line="252" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="266" package="Default">
-        <name>testGetConfig</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testGetConfig()</full_name>
-        <docblock line="266">
-          <description>Test for `getConfig()` method</description>
-          <long-description></long-description>
-          <tag name="return" line="266" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="test" line="266" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="279" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="208" package="Default">
         <name>testImport</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testImport()</full_name>
-        <docblock line="279">
+        <docblock line="208">
           <description>Test for `import()` method</description>
           <long-description></long-description>
-          <tag name="return" line="279" description="" type="void">
+          <tag name="return" line="208" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="test" line="279" description=""/>
+          <tag name="test" line="208" description=""/>
         </docblock>
       </method>
-      <method final="false" abstract="true" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="292" package="Default">
+      <method final="false" abstract="true" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="221" package="Default">
         <name>testImportExecutable</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testImportExecutable()</full_name>
-        <docblock line="292">
+        <docblock line="221">
           <description>Test for `_importExecutable()` method</description>
           <long-description></long-description>
-          <tag name="return" line="292" description="" type="void">
+          <tag name="return" line="221" description="" type="void">
             <type>void</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="299" package="Default">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="228" package="Default">
         <name>testImportExecutableWithCompression</name>
         <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testImportExecutableWithCompression()</full_name>
-        <docblock line="299">
+        <docblock line="228">
           <description>Test for `_importExecutableWithCompression()` method</description>
           <long-description></long-description>
-          <tag name="return" line="299" description="" type="void">
+          <tag name="return" line="228" description="" type="void">
             <type>void</type>
           </tag>
-          <tag name="test" line="299" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="328" package="Default">
-        <name>testImportOnFailure</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testImportOnFailure()</full_name>
-        <docblock line="328">
-          <description>Test for `import()` method on failure</description>
-          <long-description></long-description>
-          <tag name="return" line="328" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="since" line="328" description="2.6.2"/>
-          <tag name="test" line="328" description=""/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="348" package="Default">
-        <name>testImportStoppedByBeforeExport</name>
-        <full_name>\DatabaseBackup\TestSuite\DriverTestCase::testImportStoppedByBeforeExport()</full_name>
-        <docblock line="348">
-          <description>Test for `import()` method. Import is stopped because the
- `beforeImport()` method returns `false`</description>
-          <long-description></long-description>
-          <tag name="return" line="348" description="" type="void">
-            <type>void</type>
-          </tag>
-          <tag name="test" line="348" description=""/>
+          <tag name="test" line="228" description=""/>
         </docblock>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="DatabaseBackup\TestSuite" line="38" package="Default">
@@ -6289,6 +6217,35 @@ Redistributions of files must retain the above copyright notice.</long-descripti
           <name>$sleep</name>
           <default>false</default>
           <type>boolean</type>
+        </argument>
+        <inherited_from>\DatabaseBackup\TestSuite\TestCase</inherited_from>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="DatabaseBackup\TestSuite" line="92" package="Default">
+        <name>getMockForDriver</name>
+        <full_name>\DatabaseBackup\TestSuite\TestCase::getMockForDriver()</full_name>
+        <docblock line="92">
+          <description>Internal method to mock a driver</description>
+          <long-description></long-description>
+          <tag name="param" line="92" description="&lt;p&gt;Driver class name&lt;/p&gt;" type="string" variable="$className">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="92" description="&lt;p&gt;The list of methods to mock&lt;/p&gt;" type="array" variable="$methods">
+            <type>array</type>
+          </tag>
+          <tag name="return" line="92" description="" type="\DatabaseBackup\Driver\Driver|\PHPUnit_Framework_MockObject_MockObject">
+            <type>\DatabaseBackup\Driver\Driver</type>
+            <type>\PHPUnit_Framework_MockObject_MockObject</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$className</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$methods</name>
+          <default></default>
+          <type>array</type>
         </argument>
         <inherited_from>\DatabaseBackup\TestSuite\TestCase</inherited_from>
       </method>
@@ -6526,7 +6483,7 @@ Redistributions of files must retain the above copyright notice.</long-descripti
         <full_name>\DatabaseBackup\BackupTrait::$validExtensions</full_name>
         <default>array('sql.bz2' =&gt; 'bzip2', 'sql.gz' =&gt; 'gzip', 'sql' =&gt; false)</default>
         <docblock line="33">
-          <description>Valid extensions (as keys) and compressions (as values)</description>
+          <description>Valid extensions. Names as keys and compressions as values</description>
           <long-description></long-description>
           <tag name="since" line="33" description="2.4.0"/>
           <tag name="var" line="33" description="" type="array" variable="">

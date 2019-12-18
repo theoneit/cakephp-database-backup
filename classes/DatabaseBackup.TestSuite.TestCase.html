@@ -83,6 +83,7 @@
                     <ul>
 <li class="method protected "><a href="#method_createBackup" title="createBackup() :: Internal method to create a backup file"><span class="description">Internal method to create a backup file</span><pre>createBackup()</pre></a></li>
 <li class="method protected "><a href="#method_createSomeBackups" title="createSomeBackups() :: Internal method to creates some backup files"><span class="description">Internal method to creates some backup files</span><pre>createSomeBackups()</pre></a></li>
+<li class="method protected "><a href="#method_getMockForDriver" title="getMockForDriver() :: Internal method to mock a driver"><span class="description">Internal method to mock a driver</span><pre>getMockForDriver()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -93,7 +94,7 @@
                     <ul><li class="property protected "><a href="#property_BackupExport" title="$BackupExport() :: `BackupManager` instance"><span class="description"></span><pre>$BackupExport</pre></a></li></ul>
 </li>
 <li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property_validExtensions" title="$validExtensions() :: Valid extensions (as keys) and compressions (as values)"><span class="description"></span><pre>$validExtensions</pre></a></li></ul>
+                    <ul><li class="property private "><a href="#property_validExtensions" title="$validExtensions() :: Valid extensions. Names as keys and compressions as values"><span class="description"></span><pre>$validExtensions</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -375,6 +376,25 @@
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
+<a id="method_getMockForDriver"></a><div class="element clickable method protected method_getMockForDriver " data-toggle="collapse" data-target=".method_getMockForDriver .collapse" title="protected">
+<h2>Internal method to mock a driver</h2>
+<pre>getMockForDriver(string $className, array $methods) : \DatabaseBackup\Driver\Driver | \PHPUnit_Framework_MockObject_MockObject</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$className</h4>
+<code>string</code><p>Driver class name</p></div>
+<div class="subelement argument">
+<h4>$methods</h4>
+<code>array</code><p>The list of methods to mock</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\DatabaseBackup\Driver\Driver</code><code>\PHPUnit_Framework_MockObject_MockObject</code>
+</div>
+</div></div>
+</div>
 <h3>
 <i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_BackupExport"> </a><div class="element clickable property protected property_BackupExport" data-toggle="collapse" data-target=".property_BackupExport .collapse" title="protected">
@@ -388,7 +408,7 @@
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_validExtensions"> </a><div class="element clickable property private property_validExtensions" data-toggle="collapse" data-target=".property_validExtensions .collapse" title="private">
-<h2>Valid extensions (as keys) and compressions (as values)</h2>
+<h2>Valid extensions. Names as keys and compressions as values</h2>
 <pre>$validExtensions : array</pre>
 <div class="row collapse"><div class="detail-description">
 <h3>Default</h3>
@@ -410,7 +430,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
-            generated on 2019-11-15T13:28:24+01:00.<br></footer></div>
+            generated on 2019-12-18T18:07:07+01:00.<br></footer></div>
 </div>
 </body>
 </html>
