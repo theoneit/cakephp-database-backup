@@ -33,7 +33,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">18</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -63,18 +63,6 @@
 <li class="nav-header">
 <i title="Methods" class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public inherited"><a href="#method_getAbsolutePath" title="getAbsolutePath() :: Returns an absolute path"><span class="description">Returns an absolute path</span><pre>getAbsolutePath()</pre></a></li>
-<li class="method public inherited"><a href="#method_getBinary" title="getBinary() :: Gets a binary path"><span class="description">Gets a binary path</span><pre>getBinary()</pre></a></li>
-<li class="method public inherited"><a href="#method_getCompression" title="getCompression() :: Returns the compression type from a filename"><span class="description">Returns the compression type from a filename</span><pre>getCompression()</pre></a></li>
-<li class="method public inherited"><a href="#method_getConnection" title="getConnection() :: Gets the connection array"><span class="description">Gets the connection array</span><pre>getConnection()</pre></a></li>
-<li class="method public inherited"><a href="#method_getDriver" title="getDriver() :: Gets the driver instance containing all methods to export/import database
- backups, according to the database engine"><span class="description">Gets the driver instance containing all methods to export/import database
- backups, according to the database engine</span><pre>getDriver()</pre></a></li>
-<li class="method public inherited"><a href="#method_getDriverName" title="getDriverName() :: Gets the driver name, according to the database engine"><span class="description">Gets the driver name, according to the database engine</span><pre>getDriverName()</pre></a></li>
-<li class="method public inherited"><a href="#method_getExtension" title="getExtension() :: Returns the extension from a filename"><span class="description">Returns the extension from a filename</span><pre>getExtension()</pre></a></li>
-<li class="method public inherited"><a href="#method_getTarget" title="getTarget() :: Returns the target path"><span class="description">Returns the target path</span><pre>getTarget()</pre></a></li>
-<li class="method public inherited"><a href="#method_getValidCompressions" title="getValidCompressions() :: Returns all valid compressions"><span class="description">Returns all valid compressions</span><pre>getValidCompressions()</pre></a></li>
-<li class="method public inherited"><a href="#method_getValidExtensions" title="getValidExtensions() :: Returns all valid extensions"><span class="description">Returns all valid extensions</span><pre>getValidExtensions()</pre></a></li>
 <li class="method public "><a href="#method_setUp" title="setUp() :: Called before every test method"><span class="description">Called before every test method</span><pre>setUp()</pre></a></li>
 <li class="method public inherited"><a href="#method_setUp" title="setUp() :: Called before every test method"><span class="description">Called before every test method</span><pre>setUp()</pre></a></li>
 <li class="method public inherited"><a href="#method_tearDown" title="tearDown() :: Called after every test method"><span class="description">Called after every test method</span><pre>tearDown()</pre></a></li>
@@ -112,9 +100,6 @@
 <li class="property protected "><a href="#property_connection" title="$connection() :: Name of the database connection"><span class="description"></span><pre>$connection</pre></a></li>
 </ul>
 </li>
-<li class="nav-header private">» Private
-                    <ul><li class="property private "><a href="#property_validExtensions" title="$validExtensions() :: Valid extensions. Names as keys and compressions as values"><span class="description"></span><pre>$validExtensions</pre></a></li></ul>
-</li>
 </ul>
 </div>
 <div class="span8">
@@ -146,217 +131,6 @@
 </table>
 <h3>
 <i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_getAbsolutePath"></a><div class="element clickable method public method_getAbsolutePath inherited" data-toggle="collapse" data-target=".method_getAbsolutePath .collapse" title="public">
-<h2>Returns an absolute path</h2>
-<pre>getAbsolutePath(string $path) : string</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getTarget">\DatabaseBackup\BackupTrait::getTarget()</a></td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$path</h4>
-<code>string</code><p>Relative or absolute path</p></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getBinary"></a><div class="element clickable method public method_getBinary inherited" data-toggle="collapse" data-target=".method_getBinary .collapse" title="public">
-<h2>Gets a binary path</h2>
-<pre>getBinary(string $name) : string</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>since</th>
-<td>2.0.0</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><p>Binary name</p></div>
-<h3>Exceptions</h3>
-<table class="table table-bordered"><tr>
-<th><code>\RuntimeException</code></th>
-<td></td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getCompression"></a><div class="element clickable method public method_getCompression inherited" data-toggle="collapse" data-target=".method_getCompression .collapse" title="public">
-<h2>Returns the compression type from a filename</h2>
-<pre>getCompression(string $filename) : string | null</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getExtension">\DatabaseBackup\BackupTrait::getExtension()</a></td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getValidCompressions">\DatabaseBackup\BackupTrait::getValidCompressions()</a></td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$filename</h4>
-<code>string</code><p>Filename</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code><code>null</code>Compression type as string or `null`</div>
-</div></div>
-</div>
-<a id="method_getConnection"></a><div class="element clickable method public method_getConnection inherited" data-toggle="collapse" data-target=".method_getConnection .collapse" title="public">
-<h2>Gets the connection array</h2>
-<pre>getConnection(string|null $name<code> = null</code>) : \Cake\Datasource\ConnectionInterface</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$name</h4>
-<code>string</code><code>null</code><p>Connection name</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>\Cake\Datasource\ConnectionInterface</code>A connection object</div>
-</div></div>
-</div>
-<a id="method_getDriver"></a><div class="element clickable method public method_getDriver inherited" data-toggle="collapse" data-target=".method_getDriver .collapse" title="public">
-<h2>Gets the driver instance containing all methods to export/import database
- backups, according to the database engine</h2>
-<pre>getDriver(\Cake\Datasource\ConnectionInterface|null $connection<code> = null</code>) : object</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.0.0</td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getConnection">\DatabaseBackup\BackupTrait::getConnection()</a></td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getDriverName">\DatabaseBackup\BackupTrait::getDriverName()</a></td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$connection</h4>
-<code>\Cake\Datasource\ConnectionInterface</code><code>null</code><p>A connection object</p></div>
-<h3>Exceptions</h3>
-<table class="table table-bordered"><tr>
-<th><code>\InvalidArgumentException</code></th>
-<td></td>
-</tr></table>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>object</code>The driver instance</div>
-</div></div>
-</div>
-<a id="method_getDriverName"></a><div class="element clickable method public method_getDriverName inherited" data-toggle="collapse" data-target=".method_getDriverName .collapse" title="public">
-<h2>Gets the driver name, according to the database engine</h2>
-<pre>getDriverName(\Cake\Datasource\ConnectionInterface|null $connection<code> = null</code>) : string</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.6.2</td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getConnection">\DatabaseBackup\BackupTrait::getConnection()</a></td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$connection</h4>
-<code>\Cake\Datasource\ConnectionInterface</code><code>null</code><p>A connection object</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code>The driver name</div>
-</div></div>
-</div>
-<a id="method_getExtension"></a><div class="element clickable method public method_getExtension inherited" data-toggle="collapse" data-target=".method_getExtension .collapse" title="public">
-<h2>Returns the extension from a filename</h2>
-<pre>getExtension(string $filename) : string | null</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#method_getValidExtensions">\DatabaseBackup\BackupTrait::getValidExtensions()</a></td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$filename</h4>
-<code>string</code><p>Filename</p></div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>string</code><code>null</code>Extension or `null` if the extension is not found or
- if is an invalid extension</div>
-</div></div>
-</div>
-<a id="method_getTarget"></a><div class="element clickable method public method_getTarget inherited" data-toggle="collapse" data-target=".method_getTarget .collapse" title="public">
-<h2>Returns the target path</h2>
-<pre>getTarget() : string</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_getValidCompressions"></a><div class="element clickable method public method_getValidCompressions inherited" data-toggle="collapse" data-target=".method_getValidCompressions .collapse" title="public">
-<h2>Returns all valid compressions</h2>
-<pre>getValidCompressions() : array</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.4.0</td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#property_validExtensions">\DatabaseBackup\BackupTrait::$validExtensions</a></td>
-</tr>
-</table>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
-<a id="method_getValidExtensions"></a><div class="element clickable method public method_getValidExtensions inherited" data-toggle="collapse" data-target=".method_getValidExtensions .collapse" title="public">
-<h2>Returns all valid extensions</h2>
-<pre>getValidExtensions() : array</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered">
-<tr>
-<th>since</th>
-<td>2.4.0</td>
-</tr>
-<tr>
-<th>uses</th>
-<td><a href="../classes/DatabaseBackup.BackupTrait.html#property_validExtensions">\DatabaseBackup\BackupTrait::$validExtensions</a></td>
-</tr>
-</table>
-<h3>Returns</h3>
-<div class="subelement response"><code>array</code></div>
-</div></div>
-</div>
 <a id="method_setUp"></a><div class="element clickable method public method_setUp " data-toggle="collapse" data-target=".method_setUp .collapse" title="public">
 <h2>Called before every test method</h2>
 <pre>setUp() : void</pre>
@@ -602,22 +376,6 @@
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="property_validExtensions"> </a><div class="element clickable property private property_validExtensions" data-toggle="collapse" data-target=".property_validExtensions .collapse" title="private">
-<h2>Valid extensions. Names as keys and compressions as values</h2>
-<pre>$validExtensions : array</pre>
-<div class="row collapse"><div class="detail-description">
-<h3>Default</h3>
-<div class="subelement argument"><code>array('sql.bz2' => 'bzip2', 'sql.gz' => 'gzip', 'sql' => false)</code></div>
-</div></div>
-<div class="labels"><span class="label">Static</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>since</th>
-<td>2.4.0</td>
-</tr></table>
-</div></div>
-</div>
 </div>
 </div>
 </div>
@@ -625,7 +383,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
-            generated on 2019-12-24T13:04:00+01:00.<br></footer></div>
+            generated on 2020-01-10T12:03:23+01:00.<br></footer></div>
 </div>
 </body>
 </html>
