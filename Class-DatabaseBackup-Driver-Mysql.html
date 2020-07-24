@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>cakephp-database-backup-                 Class
+     DatabaseBackup\Driver\Mysql
+</title>
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/highlight/default.css">
+        <script src="assets/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 p-3">
+                    <ul class="list-unstyled m-0">
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-DeleteAllCommand.html" title="DatabaseBackup\Command\DeleteAllCommand">DatabaseBackup\Command\DeleteAllCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ExportCommand.html" title="DatabaseBackup\Command\ExportCommand">DatabaseBackup\Command\ExportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ImportCommand.html" title="DatabaseBackup\Command\ImportCommand">DatabaseBackup\Command\ImportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-IndexCommand.html" title="DatabaseBackup\Command\IndexCommand">DatabaseBackup\Command\IndexCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-RotateCommand.html" title="DatabaseBackup\Command\RotateCommand">DatabaseBackup\Command\RotateCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-SendCommand.html" title="DatabaseBackup\Command\SendCommand">DatabaseBackup\Command\SendCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Console-Command.html" title="DatabaseBackup\Console\Command">DatabaseBackup\Console\Command</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Driver.html" title="DatabaseBackup\Driver\Driver">DatabaseBackup\Driver\Driver</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Mysql.html" title="DatabaseBackup\Driver\Mysql">DatabaseBackup\Driver\Mysql</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Postgres.html" title="DatabaseBackup\Driver\Postgres">DatabaseBackup\Driver\Postgres</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Sqlite.html" title="DatabaseBackup\Driver\Sqlite">DatabaseBackup\Driver\Sqlite</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Plugin.html" title="DatabaseBackup\Plugin">DatabaseBackup\Plugin</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-DriverTestCase.html" title="DatabaseBackup\TestSuite\DriverTestCase">DatabaseBackup\TestSuite\DriverTestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-TestCase.html" title="DatabaseBackup\TestSuite\TestCase">DatabaseBackup\TestSuite\TestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupExport.html" title="DatabaseBackup\Utility\BackupExport">DatabaseBackup\Utility\BackupExport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupImport.html" title="DatabaseBackup\Utility\BackupImport">DatabaseBackup\Utility\BackupImport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupManager.html" title="DatabaseBackup\Utility\BackupManager">DatabaseBackup\Utility\BackupManager</a>
+    </li>
+</ul>
+                </div>
+                <div class="col p-3">
+                        <h2>            Class
+     <em>Mysql</em></h2>
+
+    <p>Mysql driver to export/import database backups</p>
+
+            <p>
+            Extends <code>DatabaseBackup\Driver\Driver</code>.
+        </p>
+    
+    
+    
+    <div class="p-3 mb-2 bg-light text-dark">
+        <div><strong>Namespace:</strong> DatabaseBackup\Driver</div>
+        <div><strong>Location:</strong> /home/mirko/Libs/Plugins/cakephp-database-backup/src/Driver/Mysql.php</div>
+    </div>
+
+    
+            <h4>Properties summary</h4>
+        <ul>
+                            <li>
+                    <div>
+    <code>$auth</code> <span class="badge badge-light">protected</span>
+</div>
+<div><span class="badge badge-light">string</span></div>
+<div><p>Temporary file with the database authentication data</p></div>
+                </li>
+                    </ul>
+    
+            <h4>Methods summary</h4>
+        <ul>
+                            <li>
+                    <div>
+    <code>
+        <a href="#_exportExecutable">_exportExecutable()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Gets the executable command to export the database</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#_importExecutable">_importExecutable()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Gets the executable command to import the database</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#writeAuthFile">writeAuthFile()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Internal method to write an auth file</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#afterExport">afterExport()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Called after export</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#afterImport">afterImport()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Called after import</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#beforeExport">beforeExport()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Called before export.</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#beforeImport">beforeImport()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Called before export.</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#deleteAuthFile">deleteAuthFile()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Deletes the temporary file with the database authentication data</p></div>
+</div>                </li>
+                    </ul>
+    
+            <h4>Methods detail</h4>
+                    <div class="mb-4">
+                <a name="_exportExecutable"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>_exportExecutable()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">_exportExecutable()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Gets the executable command to export the database</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>string</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="_importExecutable"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>_importExecutable()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">_importExecutable()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Gets the executable command to import the database</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>string</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="writeAuthFile"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>writeAuthFile()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">writeAuthFile(string $content)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Internal method to write an auth file</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">string $content</code> <p>Content</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>bool</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="afterExport"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>afterExport()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">afterExport()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Called after export</p></small>
+    </blockquote></div>            </div>
+                    <div class="mb-4">
+                <a name="afterImport"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>afterImport()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">afterImport()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Called after import</p></small>
+    </blockquote></div>            </div>
+                    <div class="mb-4">
+                <a name="beforeExport"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>beforeExport()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">beforeExport()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Called before export.
+It stores the authentication data, to be used to export the database, in
+a temporary file.</p>
+<p>For security reasons, it's recommended to specify the password in a
+configuration file and not in the command (a user can execute a
+<code>ps aux | grep mysqldump</code> and see the password).
+So it creates a temporary file to store the configuration options</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>bool</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="beforeImport"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>beforeImport()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">beforeImport()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Called before export.
+It stores the authentication data, to be used to import the database, in
+a temporary file.</p>
+<p>For security reasons, it's recommended to specify the password in
+a configuration file and not in the command (a user can execute
+a <code>ps aux | grep mysqldump</code> and see the password).
+So it creates a temporary file to store the configuration options</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>bool</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="deleteAuthFile"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>deleteAuthFile()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">deleteAuthFile()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Deletes the temporary file with the database authentication data</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>bool</code></div>
+        <div><p><code>true</code> on success</p></div>
+    </div></div>            </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+    <p class="bg-light m-0 p-3 small text-center">
+        This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
+    </p>
+</div>
+    </body>
+</html>

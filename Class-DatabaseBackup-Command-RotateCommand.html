@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>cakephp-database-backup-                 Class
+     DatabaseBackup\Command\RotateCommand
+</title>
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/highlight/default.css">
+        <script src="assets/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 p-3">
+                    <ul class="list-unstyled m-0">
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-DeleteAllCommand.html" title="DatabaseBackup\Command\DeleteAllCommand">DatabaseBackup\Command\DeleteAllCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ExportCommand.html" title="DatabaseBackup\Command\ExportCommand">DatabaseBackup\Command\ExportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ImportCommand.html" title="DatabaseBackup\Command\ImportCommand">DatabaseBackup\Command\ImportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-IndexCommand.html" title="DatabaseBackup\Command\IndexCommand">DatabaseBackup\Command\IndexCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-RotateCommand.html" title="DatabaseBackup\Command\RotateCommand">DatabaseBackup\Command\RotateCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-SendCommand.html" title="DatabaseBackup\Command\SendCommand">DatabaseBackup\Command\SendCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Console-Command.html" title="DatabaseBackup\Console\Command">DatabaseBackup\Console\Command</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Driver.html" title="DatabaseBackup\Driver\Driver">DatabaseBackup\Driver\Driver</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Mysql.html" title="DatabaseBackup\Driver\Mysql">DatabaseBackup\Driver\Mysql</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Postgres.html" title="DatabaseBackup\Driver\Postgres">DatabaseBackup\Driver\Postgres</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Sqlite.html" title="DatabaseBackup\Driver\Sqlite">DatabaseBackup\Driver\Sqlite</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Plugin.html" title="DatabaseBackup\Plugin">DatabaseBackup\Plugin</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-DriverTestCase.html" title="DatabaseBackup\TestSuite\DriverTestCase">DatabaseBackup\TestSuite\DriverTestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-TestCase.html" title="DatabaseBackup\TestSuite\TestCase">DatabaseBackup\TestSuite\TestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupExport.html" title="DatabaseBackup\Utility\BackupExport">DatabaseBackup\Utility\BackupExport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupImport.html" title="DatabaseBackup\Utility\BackupImport">DatabaseBackup\Utility\BackupImport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupManager.html" title="DatabaseBackup\Utility\BackupManager">DatabaseBackup\Utility\BackupManager</a>
+    </li>
+</ul>
+                </div>
+                <div class="col p-3">
+                        <h2>            Class
+     <em>RotateCommand</em></h2>
+
+    <p>Rotates backups</p>
+
+            <p>
+            Extends <code>DatabaseBackup\Console\Command</code>.
+        </p>
+    
+    
+    
+    <div class="p-3 mb-2 bg-light text-dark">
+        <div><strong>Namespace:</strong> DatabaseBackup\Command</div>
+        <div><strong>Location:</strong> /home/mirko/Libs/Plugins/cakephp-database-backup/src/Command/RotateCommand.php</div>
+    </div>
+
+    
+    
+            <h4>Methods summary</h4>
+        <ul>
+                            <li>
+                    <div>
+    <code>
+        <a href="#buildOptionParser">buildOptionParser()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Hook method for defining this command's option parser</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#execute">execute()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Rotates backups.</p></div>
+</div>                </li>
+                    </ul>
+    
+            <h4>Methods detail</h4>
+                    <div class="mb-4">
+                <a name="buildOptionParser"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>buildOptionParser()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">buildOptionParser(Cake\Console\ConsoleOptionParser $parser)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Hook method for defining this command's option parser</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">Cake\Console\ConsoleOptionParser $parser</code> <p>The parser to be defined</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>Cake\Console\ConsoleOptionParser</code></div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="execute"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>execute()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">execute(Cake\Console\Arguments $args, Cake\Console\ConsoleIo $io)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Rotates backups.
+You have to indicate the number of backups you want to keep. So, it will
+delete all backups that are older. By default, no backup will be deleted</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">Cake\Console\Arguments $args</code> <p>The command arguments</p>
+    </div>
+    <div class="mb-3">
+        <code class="language-php">Cake\Console\ConsoleIo $io</code> <p>The console io</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>int|null</code></div>
+        <div><p>The exit code or null for success</p></div>
+    </div>
+
+    <h6>See</h6>
+    <div class="mb-3">
+        <div>https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupShell#rotate</div>
+    </div></div>            </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+    <p class="bg-light m-0 p-3 small text-center">
+        This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
+    </p>
+</div>
+    </body>
+</html>

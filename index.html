@@ -1,90 +1,201 @@
-<!DOCTYPE html><html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta charset="utf-8">
-<title>cakephp-database-backup</title>
-<meta name="author" content="Mike van Riel">
-<meta name="description" content="">
-<link href="css/template.css" rel="stylesheet" media="all">
-<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-</head>
-<body>
-<div class="navbar navbar-fixed-top">
-<div class="navbar-inner"><div class="container">
-<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">cakephp-database-backup</a><div class="nav-collapse"><ul class="nav">
-<li class="dropdown">
-<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a>Namespaces</a></li>
-<li><a href="namespaces/DatabaseBackup.html"><i class="icon-th"></i> DatabaseBackup</a></li>
-<li><a>Packages</a></li>
-<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>cakephp-database-backup</title>
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/highlight/default.css">
+        <script src="assets/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 p-3">
+                    <ul class="list-unstyled m-0">
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-DeleteAllCommand.html" title="DatabaseBackup\Command\DeleteAllCommand">DatabaseBackup\Command\DeleteAllCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ExportCommand.html" title="DatabaseBackup\Command\ExportCommand">DatabaseBackup\Command\ExportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ImportCommand.html" title="DatabaseBackup\Command\ImportCommand">DatabaseBackup\Command\ImportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-IndexCommand.html" title="DatabaseBackup\Command\IndexCommand">DatabaseBackup\Command\IndexCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-RotateCommand.html" title="DatabaseBackup\Command\RotateCommand">DatabaseBackup\Command\RotateCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-SendCommand.html" title="DatabaseBackup\Command\SendCommand">DatabaseBackup\Command\SendCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Console-Command.html" title="DatabaseBackup\Console\Command">DatabaseBackup\Console\Command</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Driver.html" title="DatabaseBackup\Driver\Driver">DatabaseBackup\Driver\Driver</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Mysql.html" title="DatabaseBackup\Driver\Mysql">DatabaseBackup\Driver\Mysql</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Postgres.html" title="DatabaseBackup\Driver\Postgres">DatabaseBackup\Driver\Postgres</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Sqlite.html" title="DatabaseBackup\Driver\Sqlite">DatabaseBackup\Driver\Sqlite</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Plugin.html" title="DatabaseBackup\Plugin">DatabaseBackup\Plugin</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-DriverTestCase.html" title="DatabaseBackup\TestSuite\DriverTestCase">DatabaseBackup\TestSuite\DriverTestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-TestCase.html" title="DatabaseBackup\TestSuite\TestCase">DatabaseBackup\TestSuite\TestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupExport.html" title="DatabaseBackup\Utility\BackupExport">DatabaseBackup\Utility\BackupExport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupImport.html" title="DatabaseBackup\Utility\BackupImport">DatabaseBackup\Utility\BackupImport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupManager.html" title="DatabaseBackup\Utility\BackupManager">DatabaseBackup\Utility\BackupManager</a>
+    </li>
 </ul>
-</li>
-<li class="dropdown" id="charts-menu">
-<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
-                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
-</li>
-<li class="dropdown" id="reports-menu">
-<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
-<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">18</span></a></li>
-<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul>
-</li>
-</ul></div>
-</div></div>
-<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+                </div>
+                <div class="col p-3">
+                        <h2>Classes index</h2>
+    <ul>
+                    <li>
+                <a href="Class-DatabaseBackup-BackupTrait.html"><code>DatabaseBackup\BackupTrait</code></a>
+                <div>
+                    A trait that provides some methods used by all other classes
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-DeleteAllCommand.html"><code>DatabaseBackup\Command\DeleteAllCommand</code></a>
+                <div>
+                    Deletes all backup files
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-ExportCommand.html"><code>DatabaseBackup\Command\ExportCommand</code></a>
+                <div>
+                    Exports a database backup
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-ImportCommand.html"><code>DatabaseBackup\Command\ImportCommand</code></a>
+                <div>
+                    Imports a database backup
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-IndexCommand.html"><code>DatabaseBackup\Command\IndexCommand</code></a>
+                <div>
+                    Lists database backups
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-RotateCommand.html"><code>DatabaseBackup\Command\RotateCommand</code></a>
+                <div>
+                    Rotates backups
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Command-SendCommand.html"><code>DatabaseBackup\Command\SendCommand</code></a>
+                <div>
+                    Sends a backup file via email
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Console-Command.html"><code>DatabaseBackup\Console\Command</code></a>
+                <div>
+                    Base class for console commands
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Driver-Driver.html"><code>DatabaseBackup\Driver\Driver</code></a>
+                <div>
+                    Represents a driver containing all methods to export/import database backups
+ according to the database engine
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Driver-Mysql.html"><code>DatabaseBackup\Driver\Mysql</code></a>
+                <div>
+                    Mysql driver to export/import database backups
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Driver-Postgres.html"><code>DatabaseBackup\Driver\Postgres</code></a>
+                <div>
+                    Postgres driver to export/import database backups
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Driver-Sqlite.html"><code>DatabaseBackup\Driver\Sqlite</code></a>
+                <div>
+                    Sqlite driver to export/import database backups
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Plugin.html"><code>DatabaseBackup\Plugin</code></a>
+                <div>
+                    Plugin class
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-TestSuite-DriverTestCase.html"><code>DatabaseBackup\TestSuite\DriverTestCase</code></a>
+                <div>
+                    DriverTestCase class.
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-TestSuite-TestCase.html"><code>DatabaseBackup\TestSuite\TestCase</code></a>
+                <div>
+                    TestCase class
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Utility-BackupExport.html"><code>DatabaseBackup\Utility\BackupExport</code></a>
+                <div>
+                    Utility to export databases
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Utility-BackupImport.html"><code>DatabaseBackup\Utility\BackupImport</code></a>
+                <div>
+                    Utility to import databases
+                </div>
+            </li>
+                    <li>
+                <a href="Class-DatabaseBackup-Utility-BackupManager.html"><code>DatabaseBackup\Utility\BackupManager</code></a>
+                <div>
+                    Utility to manage database backups
+                </div>
+            </li>
+            </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+    <p class="bg-light m-0 p-3 small text-center">
+        This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
+    </p>
 </div>
-<div id="___" class="container">
-<noscript><div class="alert alert-warning">
-                            Javascript is disabled; several features are only available
-                            if Javascript is enabled.
-                        </div></noscript>
-<div class="hero-unit">
-<h1>cakephp-database-backup</h1>
-<h2>Documentation</h2>
-</div>
-<div class="row">
-<div class="span7">
-<div class="well"><ul class="nav nav-list">
-<li class="nav-header">Namespaces</li>
-<li><a href="namespaces/DatabaseBackup.html"><i class="icon-th"></i> DatabaseBackup</a></li>
-</ul></div>
-<div class="well"><ul class="nav nav-list">
-<li class="nav-header">Packages</li>
-<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-</ul></div>
-</div>
-<div class="span5">
-<div class="well"><ul class="nav nav-list">
-<li class="nav-header">Charts</li>
-<li><a href="graph_class.html"><i class="icon-list-alt"></i> Class inheritance diagram
-                            </a></li>
-</ul></div>
-<div class="well"><ul class="nav nav-list">
-<li class="nav-header">Reports</li>
-<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">18</span></a></li>
-<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
-                <ul></ul></a></li>
-<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
-</ul></div>
-</div>
-</div>
-<div class="row"><footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.9.1</a> and<br>
-            generated on 2020-04-01T14:13:33+02:00.<br></footer></div>
-</div>
-</body>
+    </body>
 </html>

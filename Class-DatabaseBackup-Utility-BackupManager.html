@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>cakephp-database-backup-                 Class
+     DatabaseBackup\Utility\BackupManager
+</title>
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/highlight/default.css">
+        <script src="assets/highlight/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 p-3">
+                    <ul class="list-unstyled m-0">
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-DeleteAllCommand.html" title="DatabaseBackup\Command\DeleteAllCommand">DatabaseBackup\Command\DeleteAllCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ExportCommand.html" title="DatabaseBackup\Command\ExportCommand">DatabaseBackup\Command\ExportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-ImportCommand.html" title="DatabaseBackup\Command\ImportCommand">DatabaseBackup\Command\ImportCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-IndexCommand.html" title="DatabaseBackup\Command\IndexCommand">DatabaseBackup\Command\IndexCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-RotateCommand.html" title="DatabaseBackup\Command\RotateCommand">DatabaseBackup\Command\RotateCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Command-SendCommand.html" title="DatabaseBackup\Command\SendCommand">DatabaseBackup\Command\SendCommand</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Console-Command.html" title="DatabaseBackup\Console\Command">DatabaseBackup\Console\Command</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Driver.html" title="DatabaseBackup\Driver\Driver">DatabaseBackup\Driver\Driver</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Mysql.html" title="DatabaseBackup\Driver\Mysql">DatabaseBackup\Driver\Mysql</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Postgres.html" title="DatabaseBackup\Driver\Postgres">DatabaseBackup\Driver\Postgres</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Driver-Sqlite.html" title="DatabaseBackup\Driver\Sqlite">DatabaseBackup\Driver\Sqlite</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Plugin.html" title="DatabaseBackup\Plugin">DatabaseBackup\Plugin</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-DriverTestCase.html" title="DatabaseBackup\TestSuite\DriverTestCase">DatabaseBackup\TestSuite\DriverTestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-TestSuite-TestCase.html" title="DatabaseBackup\TestSuite\TestCase">DatabaseBackup\TestSuite\TestCase</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupExport.html" title="DatabaseBackup\Utility\BackupExport">DatabaseBackup\Utility\BackupExport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupImport.html" title="DatabaseBackup\Utility\BackupImport">DatabaseBackup\Utility\BackupImport</a>
+    </li>
+    <li class="text-truncate">
+        <a href="Class-DatabaseBackup-Utility-BackupManager.html" title="DatabaseBackup\Utility\BackupManager">DatabaseBackup\Utility\BackupManager</a>
+    </li>
+</ul>
+                </div>
+                <div class="col p-3">
+                        <h2>            Class
+     <em>BackupManager</em></h2>
+
+    <p>Utility to manage database backups</p>
+
+    
+    
+            <p>
+            Uses <code>DatabaseBackup\BackupTrait</code>.
+        </p>
+    
+    <div class="p-3 mb-2 bg-light text-dark">
+        <div><strong>Namespace:</strong> DatabaseBackup\Utility</div>
+        <div><strong>Location:</strong> /home/mirko/Libs/Plugins/cakephp-database-backup/src/Utility/BackupManager.php</div>
+    </div>
+
+    
+    
+            <h4>Methods summary</h4>
+        <ul>
+                            <li>
+                    <div>
+    <code>
+        <a href="#delete">delete()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Deletes a backup file</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#deleteAll">deleteAll()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Deletes all backup files</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#index">index()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Returns a list of database backups</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#rotate">rotate()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Rotates backups.</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#getEmailInstance">getEmailInstance()</a>
+    </code> <span class="badge badge-light">protected</span>
+    <div><p>Internal method to get an email instance with all options to send a
+backup file via email</p></div>
+</div>                </li>
+                            <li>
+                    <div>
+    <code>
+        <a href="#send">send()</a>
+    </code> <span class="badge badge-light">public</span>
+    <div><p>Sends a backup file via email</p></div>
+</div>                </li>
+                    </ul>
+    
+            <h4>Methods detail</h4>
+                    <div class="mb-4">
+                <a name="delete"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>delete()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">delete(string $filename)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Deletes a backup file</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">string $filename</code> <p>Filename of the backup that you want to delete.
+The path can be relative to the backup directory</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>bool</code></div>
+    </div>
+
+    <h6>See</h6>
+    <div class="mb-3">
+        <div>https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#delete</div>
+    </div>
+
+    <h6>Throws</h6>
+    <div class="mb-3">
+        <div><code>Tools\Exception\NotWritableException</code></div>
+    </div>
+</div>            </div>
+                    <div class="mb-4">
+                <a name="deleteAll"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>deleteAll()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">deleteAll()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Deletes all backup files</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>array</code></div>
+        <div><p>List of deleted backup files</p></div>
+    </div>
+
+    <h6>See</h6>
+    <div class="mb-3">
+        <div>https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#deleteAll</div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="index"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>index()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">index()</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Returns a list of database backups</p></small>
+    </blockquote>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>Cake\Collection\Collection</code></div>
+        <div><p>Collection of backups. Each backup
+is an entity</p></div>
+    </div>
+
+    <h6>See</h6>
+    <div class="mb-3">
+        <div>https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#index</div>
+    </div></div>            </div>
+                    <div class="mb-4">
+                <a name="rotate"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>rotate()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">rotate(integer $rotate)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Rotates backups.
+You must indicate the number of backups you want to keep. So, it will
+delete all backups that are older.</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">integer $rotate</code> <p>Number of backups that you want to keep</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>array</code></div>
+        <div><p>Array of deleted files</p></div>
+    </div>
+
+    <h6>See</h6>
+    <div class="mb-3">
+        <div>https://github.com/mirko-pagliai/cakephp-database-backup/wiki/How-to-use-the-BackupManager-utility#rotate</div>
+    </div>
+
+    <h6>Throws</h6>
+    <div class="mb-3">
+        <div><code>InvalidArgumentException</code></div>
+    </div>
+</div>            </div>
+                    <div class="mb-4">
+                <a name="getEmailInstance"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>getEmailInstance()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">getEmailInstance(string $backup, string $recipient)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Internal method to get an email instance with all options to send a
+backup file via email</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">string $backup</code> <p>Backup you want to send</p>
+    </div>
+    <div class="mb-3">
+        <code class="language-php">string $recipient</code> <p>Recipient's email address</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>Cake\Mailer\Email</code></div>
+    </div>
+
+    <h6>Throws</h6>
+    <div class="mb-3">
+        <div><code>Tools\Exception\NotReadableException</code></div>
+    </div>
+</div>            </div>
+                    <div class="mb-4">
+                <a name="send"></a>
+<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>send()</h5></div>
+<div class="ml-3">
+    <pre><code class="language-php">send(string $filename, string $recipient)</code></pre>
+    <blockquote class="blockquote">
+        <small class="font-weight-light"><p>Sends a backup file via email</p></small>
+    </blockquote>
+
+    <h6>Parameters</h6>
+    <div class="mb-3">
+        <code class="language-php">string $filename</code> <p>Filename of the backup that you want to send via
+email. The path can be relative to the backup directory</p>
+    </div>
+    <div class="mb-3">
+        <code class="language-php">string $recipient</code> <p>Recipient's email address</p>
+    </div>
+
+    <h6>Return</h6>
+    <div class="mb-3">
+        <div><code>array</code></div>
+    </div></div>            </div>
+            
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+    <p class="bg-light m-0 p-3 small text-center">
+        This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
+    </p>
+</div>
+    </body>
+</html>
