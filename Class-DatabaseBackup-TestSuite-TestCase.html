@@ -3,23 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>cakephp-database-backup-                 Abstract class
-     DatabaseBackup\TestSuite\TestCase
-</title>
+        <title>cakephp-database-backup - Abstract DatabaseBackup\TestSuite\TestCase</title>
         <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/highlight/default.css">
+        <link rel="stylesheet" href="assets/highlight/styles/default.css">
+        <link rel="stylesheet" href="assets/default.css">
         <script src="assets/highlight/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-dark bg-dark">
-            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
-        </nav>
+<nav class="navbar sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+    <div class="d-inline">
+        <a class="btn btn-sm btn-warning" href="errors.html" title="Errors">
+            Errors <span class="badge badge-dark badge-pill">13</span>
+        </a>
+    </div>
+</nav>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-lg-4 p-3">
-                    <ul class="list-unstyled m-0">
+<ul class="list-unstyled m-0">
     <li class="text-truncate">
         <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
     </li>
@@ -76,152 +80,228 @@
     </li>
 </ul>
                 </div>
-                <div class="col p-3">
-                        <h2>            Abstract class
-     <em>TestCase</em></h2>
+                <div class="col-md-9 col-lg-8 p-3">
+                    <div class="class-element">
+    <h2>Abstract <em>TestCase</em></h2>
 
-    <p>TestCase class</p>
+    <div class="description"><p>TestCase class</p></div>
 
-            <p>
-            Extends <code>MeTools\TestSuite\TestCase</code>.
-        </p>
-    
-    
-            <p>
-            Uses <code>DatabaseBackup\BackupTrait</code>.
-        </p>
-    
-    <div class="p-3 mb-2 bg-light text-dark">
-        <div><strong>Namespace:</strong> DatabaseBackup\TestSuite</div>
-        <div><strong>Location:</strong> /home/mirko/Libs/Plugins/cakephp-database-backup/src/TestSuite/TestCase.php</div>
+    <div class="mb-2">Extends <code>MeTools\TestSuite\TestCase</code>.</div>
+
+
+    <div class="mb-2">Uses
+        <ul>
+            <li><code>Tools\TestSuite\BackwardCompatibilityTrait</code></li>
+            <li><code>DatabaseBackup\BackupTrait</code></li>
+        </ul>
     </div>
 
-    
-            <h4>Properties summary</h4>
-        <ul>
-                            <li>
-                    <div>
-    <code>$BackupExport</code> <span class="badge badge-light">protected</span>
+    <div class="namespace">
+        <div><strong>Namespace:</strong> <pre class="d-inline">DatabaseBackup\TestSuite</pre></div>
+        <div><strong>Location:</strong> <pre class="d-inline">/home/mirko/Libs/Plugins/cakephp-database-backup/src/TestSuite/TestCase.php</pre></div>
+    </div>
+
+
+    <h4>Properties summary</h4>
+    <ul>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$BackupExport</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>DatabaseBackup\Utility\BackupExport</pre>
+    <div class="description"><p><code>BackupManager</code> instance</p></div>
 </div>
-<div><span class="badge badge-light">DatabaseBackup\Utility\BackupExport</span></div>
-<div><p><code>BackupManager</code> instance</p></div>
-                </li>
-                    </ul>
-    
-            <h4>Methods summary</h4>
-        <ul>
-                            <li>
-                    <div>
+        </li>
+    </ul>
+
+    <h4>Methods summary</h4>
+    <ul>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#setUp">setUp()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Called before every test method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Called before every test method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#tearDown">tearDown()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Called after every test method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Called after every test method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#createBackup">createBackup()</a>
     </code> <span class="badge badge-light">protected</span>
-    <div><p>Internal method to create a backup file</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Internal method to create a backup file</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#createSomeBackups">createSomeBackups()</a>
     </code> <span class="badge badge-light">protected</span>
-    <div><p>Internal method to creates some backup files</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Internal method to creates some backup files</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#getMockForDriver">getMockForDriver()</a>
     </code> <span class="badge badge-light">protected</span>
-    <div><p>Internal method to mock a driver</p></div>
-</div>                </li>
-                    </ul>
-    
-            <h4>Methods detail</h4>
-                    <div class="mb-4">
-                <a name="setUp"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>setUp()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">setUp()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Called before every test method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="tearDown"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>tearDown()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">tearDown()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Called after every test method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="createBackup"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>createBackup()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">createBackup(string $filename = 'backup.sql')</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Internal method to create a backup file</p></small>
-    </blockquote>
+    <div class="description"><p>Internal method to mock a driver</p></div>
 
-    <h6>Parameters</h6>
-    <div class="mb-3">
-        <code class="language-php">string $filename = 'backup.sql'</code> <p>Filename</p>
+</div>
+        </li>
+    </ul>
+
+    <h4>Methods detail</h4>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="setUp"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>setUp()</h5>
     </div>
+    <div class="body">
+        <pre><code class="language-php">setUp()</code></pre>
+        <div class="description"><p>Called before every test method</p></div>
 
+
+<div class="tag-element">
     <h6>Return</h6>
     <div class="mb-3">
-        <div><code>string</code></div>
-    </div></div>            </div>
-                    <div class="mb-4">
-                <a name="createSomeBackups"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>createSomeBackups()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">createSomeBackups()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Internal method to creates some backup files</p></small>
-    </blockquote>
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
 
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="tearDown"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>tearDown()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">tearDown()</code></pre>
+        <div class="description"><p>Called after every test method</p></div>
+
+
+<div class="tag-element">
     <h6>Return</h6>
     <div class="mb-3">
-        <div><code>array</code></div>
-    </div></div>            </div>
-                    <div class="mb-4">
-                <a name="getMockForDriver"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>getMockForDriver()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">getMockForDriver(string $className, array $methods)</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Internal method to mock a driver</p></small>
-    </blockquote>
-
-    <h6>Parameters</h6>
-    <div class="mb-3">
-        <code class="language-php">string $className</code> <p>Driver class name</p>
+        <pre><code class="language-php">void</code></pre>
     </div>
-    <div class="mb-3">
-        <code class="language-php">array $methods</code> <p>The list of methods to mock</p>
-    </div>
+</div>
 
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="createBackup"></a>
+    <div class="title">
+        <div>protected</div>
+        <h5>createBackup()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">createBackup(string $filename = 'backup.sql')</code></pre>
+        <div class="description"><p>Internal method to create a backup file</p></div>
+
+        <h6>Parameters</h6>
+        <div class="parameter-element">
+            <pre><code class="language-php">string $filename = 'backup.sql'</code></pre>
+            <div class="description"><p>Filename</p></div>
+        </div>
+
+<div class="tag-element">
     <h6>Return</h6>
     <div class="mb-3">
-        <div><code>DatabaseBackup\Driver\Driver|\PHPUnit_Framework_MockObject_MockObject</code></div>
-    </div></div>            </div>
-            
+        <pre><code class="language-php">string</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="createSomeBackups"></a>
+    <div class="title">
+        <div>protected</div>
+        <h5>createSomeBackups()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">createSomeBackups()</code></pre>
+        <div class="description"><p>Internal method to creates some backup files</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">array</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Uses</h6>
+    <div class="mb-3">
+        <div class="description"><p>createBackup()</p></div>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="getMockForDriver"></a>
+    <div class="title">
+        <div>protected</div>
+        <h5>getMockForDriver()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">getMockForDriver(string $className, array $methods)</code></pre>
+        <div class="description"><p>Internal method to mock a driver</p></div>
+
+        <h6>Parameters</h6>
+        <div class="parameter-element">
+            <pre><code class="language-php">string $className</code></pre>
+            <div class="description"><p>Driver class name</p></div>
+        </div>
+        <div class="parameter-element">
+            <pre><code class="language-php">array $methods</code></pre>
+            <div class="description"><p>The list of methods to mock</p></div>
+        </div>
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">DatabaseBackup\Driver\Driver|\PHPUnit\Framework\MockObject\MockObject</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+</div>
                 </div>
             </div>
         </div>
 
-        <div id="footer">
+<div id="footer">
     <p class="bg-light m-0 p-3 small text-center">
         This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
     </p>

@@ -3,23 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>cakephp-database-backup-                 Abstract class
-     DatabaseBackup\TestSuite\DriverTestCase
-</title>
+        <title>cakephp-database-backup - Abstract DatabaseBackup\TestSuite\DriverTestCase</title>
         <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/highlight/default.css">
+        <link rel="stylesheet" href="assets/highlight/styles/default.css">
+        <link rel="stylesheet" href="assets/default.css">
         <script src="assets/highlight/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-dark bg-dark">
-            <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
-        </nav>
+<nav class="navbar sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand mb-0 h1" href="index.html">cakephp-database-backup</a>
+    <div class="d-inline">
+        <a class="btn btn-sm btn-warning" href="errors.html" title="Errors">
+            Errors <span class="badge badge-dark badge-pill">13</span>
+        </a>
+    </div>
+</nav>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-lg-4 p-3">
-                    <ul class="list-unstyled m-0">
+<ul class="list-unstyled m-0">
     <li class="text-truncate">
         <a href="Class-DatabaseBackup-BackupTrait.html" title="DatabaseBackup\BackupTrait">DatabaseBackup\BackupTrait</a>
     </li>
@@ -76,230 +80,419 @@
     </li>
 </ul>
                 </div>
-                <div class="col p-3">
-                        <h2>            Abstract class
-     <em>DriverTestCase</em></h2>
+                <div class="col-md-9 col-lg-8 p-3">
+                    <div class="class-element">
+    <h2>Abstract <em>DriverTestCase</em></h2>
 
-    <p>DriverTestCase class.
-Classes with tests for driver must extend this class.</p>
+    <div class="description"><p>DriverTestCase class.</p>
+<p>Classes with tests for driver must extend this class.</p></div>
 
-            <p>
-            Extends <code>DatabaseBackup\TestSuite\TestCase</code>.
-        </p>
-    
-    
-    
-    <div class="p-3 mb-2 bg-light text-dark">
-        <div><strong>Namespace:</strong> DatabaseBackup\TestSuite</div>
-        <div><strong>Location:</strong> /home/mirko/Libs/Plugins/cakephp-database-backup/src/TestSuite/DriverTestCase.php</div>
+    <div class="mb-2">Extends <code>DatabaseBackup\TestSuite\TestCase</code>.</div>
+
+
+
+    <div class="namespace">
+        <div><strong>Namespace:</strong> <pre class="d-inline">DatabaseBackup\TestSuite</pre></div>
+        <div><strong>Location:</strong> <pre class="d-inline">/home/mirko/Libs/Plugins/cakephp-database-backup/src/TestSuite/DriverTestCase.php</pre></div>
     </div>
 
-    
-            <h4>Properties summary</h4>
-        <ul>
-                            <li>
-                    <div>
-    <code>$Articles</code> <span class="badge badge-light">protected</span>
+
+    <h4>Properties summary</h4>
+    <ul>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$Articles</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>Cake\ORM\Table</pre>
+    <div class="description"><p><code>Articles</code> table</p></div>
 </div>
-<div><span class="badge badge-light">Cake\ORM\Table</span></div>
-<div><p><code>Articles</code> table</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$Comments</code> <span class="badge badge-light">protected</span>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$Comments</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>Cake\ORM\Table</pre>
+    <div class="description"><p><code>Comments</code> table</p></div>
 </div>
-<div><span class="badge badge-light">Cake\ORM\Table</span></div>
-<div><p><code>Comments</code> table</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$Driver</code> <span class="badge badge-light">protected</span>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$Driver</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>DatabaseBackup\Driver\Driver</pre>
+    <div class="description"><p><code>Driver</code> instance</p></div>
 </div>
-<div><span class="badge badge-light">DatabaseBackup\Driver\Driver</span></div>
-<div><p><code>Driver</code> instance</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$DriverClass</code> <span class="badge badge-light">protected</span>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$DriverClass</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>string</pre>
+    <div class="description"><p>Driver class</p></div>
+<div class="tag-element">
+    <h6>Since</h6>
+    <div class="mb-3">
+        <div class="description"><p>2.5.1</p></div>
+    </div>
 </div>
-<div><span class="badge badge-light">string</span></div>
-<div><p>Driver class</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$autoFixtures</code> <span class="badge badge-light">public</span>
+
 </div>
-<div><span class="badge badge-light">bool</span></div>
-<div><p>Auto fixtures</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$connection</code> <span class="badge badge-light">protected</span>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$autoFixtures</code> <span class="badge badge-light">public</span>
+    </div>
+    <pre>bool</pre>
+    <div class="description"><p>Auto fixtures</p></div>
 </div>
-<div><span class="badge badge-light">string</span></div>
-<div><p>Name of the database connection</p></div>
-                </li>
-                            <li>
-                    <div>
-    <code>$fixtures</code> <span class="badge badge-light">public</span>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$connection</code> <span class="badge badge-light">protected</span>
+    </div>
+    <pre>string</pre>
+    <div class="description"><p>Name of the database connection</p></div>
 </div>
-<div><span class="badge badge-light">array</span></div>
-<div><p>Fixtures</p></div>
-                </li>
-                    </ul>
-    
-            <h4>Methods summary</h4>
-        <ul>
-                            <li>
-                    <div>
+        </li>
+        <li>
+<div class="property-element">
+    <div>
+        <code>$fixtures</code> <span class="badge badge-light">public</span>
+    </div>
+    <pre>array</pre>
+    <div class="description"><p>Fixtures</p></div>
+</div>
+        </li>
+    </ul>
+
+    <h4>Methods summary</h4>
+    <ul>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#setUp">setUp()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Called before every test method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Called before every test method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#getAllRecords">getAllRecords()</a>
     </code> <span class="badge badge-light">protected</span>
-    <div><p>Internal method to get all records from the database</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Internal method to get all records from the database</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testExport">testExport()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>export()</code> method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Test for <code>export()</code> method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testExportAndImport">testExportAndImport()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>export()</code> and <code>import()</code> methods.</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Test for <code>export()</code> and <code>import()</code> methods.</p>
+<p>It tests that the backup is properly exported and then imported.</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testExportExecutable">testExportExecutable()</a>
-    </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>_exportExecutable()</code> method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    </code> <span class="badge badge-light">public</span> <span class="badge badge-light">abstract</span>
+    <div class="description"><p>Test for <code>_exportExecutable()</code> method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testExportExecutableWithCompression">testExportExecutableWithCompression()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>_exportExecutableWithCompression()</code> method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Test for <code>_exportExecutableWithCompression()</code> method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testImport">testImport()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>import()</code> method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    <div class="description"><p>Test for <code>import()</code> method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testImportExecutable">testImportExecutable()</a>
-    </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>_importExecutable()</code> method</p></div>
-</div>                </li>
-                            <li>
-                    <div>
+    </code> <span class="badge badge-light">public</span> <span class="badge badge-light">abstract</span>
+    <div class="description"><p>Test for <code>_importExecutable()</code> method</p></div>
+
+</div>
+        </li>
+        <li>
+<div class="method-summary-element">
     <code>
         <a href="#testImportExecutableWithCompression">testImportExecutableWithCompression()</a>
     </code> <span class="badge badge-light">public</span>
-    <div><p>Test for <code>_importExecutableWithCompression()</code> method</p></div>
-</div>                </li>
-                    </ul>
-    
-            <h4>Methods detail</h4>
-                    <div class="mb-4">
-                <a name="setUp"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>setUp()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">setUp()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Called before every test method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="getAllRecords"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>getAllRecords()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">getAllRecords()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Internal method to get all records from the database</p></small>
-    </blockquote>
+    <div class="description"><p>Test for <code>_importExecutableWithCompression()</code> method</p></div>
 
+</div>
+        </li>
+    </ul>
+
+    <h4>Methods detail</h4>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="setUp"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>setUp()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">setUp()</code></pre>
+        <div class="description"><p>Called before every test method</p></div>
+
+
+<div class="tag-element">
     <h6>Return</h6>
     <div class="mb-3">
-        <div><code>array</code></div>
-    </div></div>            </div>
-                    <div class="mb-4">
-                <a name="testExport"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testExport()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testExport()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>export()</code> method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testExportAndImport"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testExportAndImport()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testExportAndImport()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>export()</code> and <code>import()</code> methods.
-It tests that the backup is properly exported and then imported.</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testExportExecutable"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testExportExecutable()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testExportExecutable()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>_exportExecutable()</code> method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testExportExecutableWithCompression"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testExportExecutableWithCompression()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testExportExecutableWithCompression()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>_exportExecutableWithCompression()</code> method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testImport"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testImport()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testImport()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>import()</code> method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testImportExecutable"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testImportExecutable()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testImportExecutable()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>_importExecutable()</code> method</p></small>
-    </blockquote></div>            </div>
-                    <div class="mb-4">
-                <a name="testImportExecutableWithCompression"></a>
-<div class="pb-1 pt-2 px-2 mb-3 bg-info text-white"><h5>testImportExecutableWithCompression()</h5></div>
-<div class="ml-3">
-    <pre><code class="language-php">testImportExecutableWithCompression()</code></pre>
-    <blockquote class="blockquote">
-        <small class="font-weight-light"><p>Test for <code>_importExecutableWithCompression()</code> method</p></small>
-    </blockquote></div>            </div>
-            
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="getAllRecords"></a>
+    <div class="title">
+        <div>protected</div>
+        <h5>getAllRecords()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">getAllRecords()</code></pre>
+        <div class="description"><p>Internal method to get all records from the database</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">array</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testExport"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>testExport()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testExport()</code></pre>
+        <div class="description"><p>Test for <code>export()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Test</h6>
+    <div class="mb-3">
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testExportAndImport"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>testExportAndImport()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testExportAndImport()</code></pre>
+        <div class="description"><p>Test for <code>export()</code> and <code>import()</code> methods.</p>
+<p>It tests that the backup is properly exported and then imported.</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Test</h6>
+    <div class="mb-3">
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testExportExecutable"></a>
+    <div class="title">
+        <div>public abstract</div>
+        <h5>testExportExecutable()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testExportExecutable()</code></pre>
+        <div class="description"><p>Test for <code>_exportExecutable()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testExportExecutableWithCompression"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>testExportExecutableWithCompression()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testExportExecutableWithCompression()</code></pre>
+        <div class="description"><p>Test for <code>_exportExecutableWithCompression()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Test</h6>
+    <div class="mb-3">
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testImport"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>testImport()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testImport()</code></pre>
+        <div class="description"><p>Test for <code>import()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Test</h6>
+    <div class="mb-3">
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testImportExecutable"></a>
+    <div class="title">
+        <div>public abstract</div>
+        <h5>testImportExecutable()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testImportExecutable()</code></pre>
+        <div class="description"><p>Test for <code>_importExecutable()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+    <div class="mb-4">
+<div class="method-element">
+    <a name="testImportExecutableWithCompression"></a>
+    <div class="title">
+        <div>public</div>
+        <h5>testImportExecutableWithCompression()</h5>
+    </div>
+    <div class="body">
+        <pre><code class="language-php">testImportExecutableWithCompression()</code></pre>
+        <div class="description"><p>Test for <code>_importExecutableWithCompression()</code> method</p></div>
+
+
+<div class="tag-element">
+    <h6>Return</h6>
+    <div class="mb-3">
+        <pre><code class="language-php">void</code></pre>
+    </div>
+</div>
+
+<div class="tag-element">
+    <h6>Test</h6>
+    <div class="mb-3">
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+</div>
                 </div>
             </div>
         </div>
 
-        <div id="footer">
+<div id="footer">
     <p class="bg-light m-0 p-3 small text-center">
         This documentation was built automatically thanks to <a href="https://github.com/mirko-pagliai/php-doc-maker" target="_blank">php-doc-maker</a>
     </p>
