@@ -1,5 +1,5 @@
 {
-    "name": "mirko-pagliai/cakephp-database-backup",
+    "name": "theoneit/cakephp-database-backup",
     "description": "Database Backup plugin for CakePHP",
     "homepage": "https://github.com/mirko-pagliai/cakephp-database-backup",
     "type": "cakephp-plugin",
