@@ -4,12 +4,6 @@
     "homepage": "https://github.com/mirko-pagliai/cakephp-database-backup",
     "type": "cakephp-plugin",
     "license": "MIT",
-    "repositories": [
-	{
-		"type": "vcs",
-		"url": "https://github.com/theoneit/php-tools.git"
-	}
-    ],
     "authors": [
         {
             "name": "Mirko Pagliai",
