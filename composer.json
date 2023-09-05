@@ -14,7 +14,7 @@
         "php": ">=5.6 <7.4",
         "cakephp/cakephp": "^3.5.1",
         "cakephp/chronos": "^1.0.1",
-        "mirko-pagliai/php-tools": "dev-php5.6"
+        "theoneit/php-tools": "dev-php5.6"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer": "^3.0|^4.4",
